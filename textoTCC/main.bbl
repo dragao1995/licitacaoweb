@@ -1,0 +1,425 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Abreu 2016]{abreu2016desenvolvimento}
+\abntrefinfo{Abreu}{ABREU}{2016}
+{ABREU, B. G.~d. Desenvolvimento de um sistema web para utiliza{\c{c}}{\~a}o e
+  gerenciamento de dados de cupons fiscais e sa{\'u}de.
+2016.}
+
+\bibitem[Agustin 2015]{agustin2015model}
+\abntrefinfo{Agustin}{AGUSTIN}{2015}
+{AGUSTIN, J. L.~H. Model-driven web applications. In:  IEEE. \emph{Science and
+  Information Conference (SAI), 2015}. [S.l.], 2015. p. 954--964.}
+
+\bibitem[Alexandrino e Paulo 2008]{alexandrino2008direito}
+\abntrefinfo{Alexandrino e Paulo}{ALEXANDRINO; PAULO}{2008}
+{ALEXANDRINO, M.; PAULO, V. \emph{Direito administrativo descomplicado}.
+  [S.l.]: M{\'e}todo, 2008. v.~12.}
+
+\bibitem[Alvarenga 2016]{alvarenga2016efeitos}
+\abntrefinfo{Alvarenga}{ALVARENGA}{2016}
+{ALVARENGA, F.~Z.
+\emph{Os efeitos da cultura nacional no desenvolvimento de sistemas de
+  informa{\c{c}}{\~a}o em equipes globalmente distribu{\'\i}das}.
+Disserta\c{c}\~{a}o (Mestrado) --- Pontif{\'\i}cia Universidade Cat{\'o}lica do
+  Rio Grande do Sul, 2016.}
+
+\bibitem[Baltzan 2016]{baltzan2016tecnologia}
+\abntrefinfo{Baltzan}{BALTZAN}{2016}
+{BALTZAN, P. \emph{Tecnologia Orientada para Gest{\~a}o}. [S.l.]: McGraw Hill
+  Brasil, 2016.}
+
+\bibitem[Barbosa]{de8processo}
+\abntrefinfo{Barbosa}{BARBOSA}{}
+{BARBOSA, G. de C. Processo licitat{\'o}rio no brasil-evolu{\c{c}}{\~a}o
+  normativa.
+\emph{Ci{\^e}ncias Sociais em Perspectiva}, v.~8, n.~15, p. 145--159.}
+
+\bibitem[BARRETO 2008]{barreto2008licitaccoes}
+\abntrefinfo{BARRETO}{BARRETO}{2008}
+{BARRETO, M. L.~T. Licita{\c{c}}{\~o}es--no{\c{c}}{\~o}es elementares.
+\emph{Universidade Federal do Pampa, CONJUR-Consultoria Jur{\'\i}dica}, 2008.}
+
+\bibitem[Batista e Bastos 2017]{batista2017desenvolvendo}
+\abntrefinfo{Batista e Bastos}{BATISTA; BASTOS}{2017}
+{BATISTA, M.~A.; BASTOS, W.~C. Desenvolvendo aplica{\c{c}}{\~o}es web baseadas
+  em microservi{\c{c}}o utilizando o framework spring.
+\emph{Sistemas de Informa{\c{c}}{\~a}o-Pedra Branca}, 2017.}
+
+\bibitem[Bianchi 2015]{bianchi2015sistema}
+\abntrefinfo{Bianchi}{BIANCHI}{2015}
+{BIANCHI, E.~A. Sistema de envio e recebimento de mensagens para plataforma
+  android utilizando spring boot e google cloud messaging.
+Universidade Tecnol{\'o}gica Federal do Paran{\'a}, 2015.}
+
+\bibitem[Brasil 1986]{l2300}
+\abntrefinfo{Brasil}{BRASIL}{1986}
+{BRASIL. \emph{Decreto-Lei Nº 2.300}. 1986.
+  \url{http://www.planalto.gov.br/ccivil_03/decreto-lei/Del2300-86.htm}.
+Online; acessado em 15 de fevereiro de 2017.}
+
+\bibitem[Brasil 1988]{l1988}
+\abntrefinfo{Brasil}{BRASIL}{1988}
+{BRASIL. \emph{Constituição 1988}. 1988.
+  \url{http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm}.
+Online; acessado em 15 de fevereiro de 2017.}
+
+\bibitem[Brasil 1993]{l8666}
+\abntrefinfo{Brasil}{BRASIL}{1993}
+{BRASIL. \emph{Lei Nº 8.666}. 1993.
+  \url{http://www.planalto.gov.br/ccivil_03/leis/L8666cons.htm}.
+Online; acessado em 15 de fevereiro de 2017.}
+
+\bibitem[Brasil 2000]{l3555}
+\abntrefinfo{Brasil}{BRASIL}{2000}
+{BRASIL. \emph{Decreto Nº 3.555}. 2000.
+  \url{http://www.planalto.gov.br/ccivil_03/decreto/d3555.htm}.
+Online; acessado em 15 de fevereiro de 2017.}
+
+\bibitem[Brasil 2002]{l10529}
+\abntrefinfo{Brasil}{BRASIL}{2002}
+{BRASIL. \emph{Lei Nº 10.520}. 2002.
+  \url{http://www.planalto.gov.br/ccivil_03/LEIS/2002/L10520.htm}.
+Online; acessado em 15 de fevereiro de 2017.}
+
+\bibitem[Brasil 2005]{l5450}
+\abntrefinfo{Brasil}{BRASIL}{2005}
+{BRASIL. \emph{Decreto Nº 5.450}. 2005.
+  \url{http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5450.htm}.
+Online; acessado em 15 de fevereiro de 2017.}
+
+\bibitem[Brazao 2014]{brazao2013}
+\abntrefinfo{Brazao}{BRAZAO}{2014}
+{BRAZAO, W. \emph{A evolu{\c{c}}{\~a} do processo licitat{\'o}rio e a sociedade
+  e seus anseios}. 2014.}
+
+\bibitem[BRUNO 2012]{123}
+\abntrefinfo{BRUNO}{BRUNO}{2012}
+{BRUNO, H. e.~A. Licitação pública modalidade carta convite.
+\emph{Unidade Universitária de Morrinhos Bacharelado em Ciências Contábeis},
+  2012.}
+
+\bibitem[CAMAR{\~A}O e DANIEL 2017]{camarao2017fase}
+\abntrefinfo{CAMAR{\~A}O e DANIEL}{CAMAR{\~A}O; DANIEL}{2017}
+{CAMAR{\~A}O, T.; DANIEL, F. A. S.~A. \emph{A fase interna de
+  licita{\c{c}}{\~a}o--Distin{\c{c}}{\~o}es entre Projeto B{\'a}sico e Termo de
+  Refer{\^e}ncia. 2016}. 2017.}
+
+\bibitem[Camar{\~a}o e Daniel 2013]{camarao2013fase}
+\abntrefinfo{Camar{\~a}o e Daniel}{CAMAR{\~A}O; DANIEL}{2013}
+{CAMAR{\~A}O, T. M. d.~C.; DANIEL, F. A. S. A.~M. A fase interna da
+  licita{\c{c}}{\~a}o: distin{\c{c}}{\~o}es entre projeto b{\'a}sico e termo de
+  refer{\^e}ncia.
+\emph{F{\'o}rum de Contrata{\c{c}}{\~a}o e Gest{\~a}o P{\'u}blica [recurso
+  eletr{\^o}nico]}, F{\'o}rum, 2013.}
+
+\bibitem[Campos e Ribeiro 2007]{campos2007realidade}
+\abntrefinfo{Campos e Ribeiro}{CAMPOS; RIBEIRO}{2007}
+{CAMPOS, L.~S.; RIBEIRO, M.~W. de S. Realidade virtual aplicada a e-commerce:
+  Proposta de plataforma baseada em vrml e php.
+2007.}
+
+\bibitem[Carlos 2015]{arquitetura}
+\abntrefinfo{Carlos}{CARLOS}{2015}
+{CARLOS, J. Angularjs - spring mvc architecture.
+2015.
+Online; acessado em 19 de novembro de 2018.
+Dispon{\'\i}vel em: \url{http://creately.com/diagram/example/joojyrjw1}.}
+
+\bibitem[Comnisky 2018]{versionamento}
+\abntrefinfo{Comnisky}{COMNISKY}{2018}
+{COMNISKY, W.~G. Versionamento sem{\^a}ntico 2,0,0.
+2018.
+Online; acessado em 17 de novembro de 2018.
+Dispon{\'\i}vel em: \url{https://semver.org/lang/pt-BR/}.}
+
+\bibitem[Costa 2017]{costa2017colossus}
+\abntrefinfo{Costa}{COSTA}{2017}
+{COSTA, S. F. A.~d. Colossus: Desenvolvimento de ferramenta case para apoio a
+  cria{\c{c}}{\~a}o de sistemas web utilizando frameworks php como modelo e
+  banco de dados mysql.
+2017.}
+
+\bibitem[Date 2004]{date2004introduccao}
+\abntrefinfo{Date}{DATE}{2004}
+{DATE, C.~J. \emph{Introdu{\c{c}}{\~a}o a sistemas de bancos de dados}. [S.l.]:
+  Elsevier Brasil, 2004.}
+
+\bibitem[Dias 2015]{dapregao}
+\abntrefinfo{Dias}{DIAS}{2015}
+{DIAS, D. da S. Preg{\~a}o eletr{\^o}nico: otimizando os recursos p{\'u}blicos.
+2015.}
+
+\bibitem[Faria 2007]{de2007curso}
+\abntrefinfo{Faria}{FARIA}{2007}
+{FARIA, E.~F. de. \emph{Curso de direito administrativo positivo}. [S.l.]:
+  Editora del Rey, 2007.}
+
+\bibitem[Ferreira 2004]{dicionario}
+\abntrefinfo{Ferreira}{FERREIRA}{2004}
+{FERREIRA, A. B. d.~H. Novo dicion{\'a}rio aur{\'e}lio da l{\'\i}ngua
+  portuguesa. In:  \emph{Novo dicion{\'a}rio Aur{\'e}lio da l{\'\i}ngua
+  portuguesa}. [S.l.: s.n.], 2004.}
+
+\bibitem[Ferreira et al. 2015]{ferreira2015arquitetutura}
+\abntrefinfo{Ferreira et al.}{FERREIRA et al.}{2015}
+{FERREIRA, G.~F. et al. Arquitetutura da informa{\c{c}}{\~a}o no
+  desenvolvimento de aplica{\c{c}}{\~a}o web.
+2015.}
+
+\bibitem[Filho 2013]{carvalho2013manual}
+\abntrefinfo{Filho}{FILHO}{2013a}
+{FILHO, J. d.~S. C. Manual de direito administrativo.
+\emph{S{\~a}o Paulo: Atlas}, v.~201, 2013.}
+
+\bibitem[Filho 2013]{filho2013}
+\abntrefinfo{Filho}{FILHO}{2013b}
+{FILHO, L. F. B. d.~M. A licita{\c{c}}{\~a}o na constitui{\c{c}}{\~a}o de 1988.
+2013.
+Online; acessado em 11 de novembro de 2018.
+Dispon{\'\i}vel em:
+  \url{https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/outras-publicacoes/volume-ii-constituicao-de-1988-o-brasil-20-anos-depois.-o-exercicio-da-politica/}.}
+
+\bibitem[FILHO 2016]{mello2016licitaccao}
+\abntrefinfo{FILHO}{FILHO}{2016}
+{FILHO, L. M. A licita{\c{c}}{\~a}o na constitui{\c{c}}{\~a}o de 1988. sd
+  dispon{\'\i}vel em:< https://www12. senado. leg.
+  br/publicacoes/estudos-legislativos/tipos-deestudos/outras-publicacoes/volume-ii-constituicao-de-1988-o-brasil-20-anos-depois.-o-exercicio-da-politica/a-licitacao-na-constituicao-de-1988>.
+v.~12, 2016.}
+
+\bibitem[Filho 2010]{justen2010curso}
+\abntrefinfo{Filho}{FILHO}{2010}
+{FILHO, M. J. \emph{Curso de direito administrativo}. [S.l.]: Saraiva, 2010.}
+
+\bibitem[Franzen e Lutz 2017]{lutz2018implantaccao}
+\abntrefinfo{Franzen e Lutz}{FRANZEN; LUTZ}{2017}
+{FRANZEN, E.; LUTZ, D. Implanta{\c{c}}{\~a}o de novo processo de trabalho em
+  uma f{\'a}brica de software baseado nos modelos {\'a}geis de desenvolvimento.
+\emph{Revista Destaques Acad{\^e}micos}, v.~10, n.~1, 2017.}
+
+\bibitem[Gasparini 2017]{gasparini2017direito}
+\abntrefinfo{Gasparini}{GASPARINI}{2017}
+{GASPARINI, D. \emph{Direito administrativo}. [S.l.]: Editora Saraiva, 2017.}
+
+\bibitem[Gon{\c{c}}alves 2007]{gonccalves2007desenvolvendo}
+\abntrefinfo{Gon{\c{c}}alves}{GON{\c{C}}ALVES}{2007}
+{GON{\c{C}}ALVES, E. Desenvolvendo aplica{\c{c}}{\~o}es web com jsp, servlets,
+  javaserver faces, hibernate, ejb 3 persistence e ajax.
+\emph{Rio de Janeiro: Ci{\^e}ncia Moderna}, p. 1--187, 2007.}
+
+\bibitem[GOTARDO 2015]{gotardo2015linguagem}
+\abntrefinfo{GOTARDO}{GOTARDO}{2015}
+{GOTARDO, R.~A. Linguagem de programa{\c{c}}{\~a}o.
+\emph{Rio de Janeiro: Seses}, 2015.}
+
+\bibitem[HackerRank 2018]{linguagemEframework}
+\abntrefinfo{HackerRank}{HACKERRANK}{2018}
+{HACKERRANK. 2018 developer skills report.
+2018.
+Online; acessado em 19 de novembro de 2018.
+Dispon{\'\i}vel em:
+  \url{https://research.hackerrank.com/developer-skills/2018/}.}
+
+\bibitem[Junior e Campos 2008]{azevedo2008definiccao}
+\abntrefinfo{Junior e Campos}{JUNIOR; CAMPOS}{2008}
+{JUNIOR, D. P.~d. A.; CAMPOS, R.~d. Defini{\c{c}}{\~a}o de requisitos de
+  software baseada numa arquitetura de modelagem de neg{\'o}cios.
+\emph{Produ{\c{c}}{\~a}o}, Associa{\c{c}}{\~a}o Brasileira de Engenharia de
+  Produ{\c{c}}{\~a}o, p. 26--46, 2008.}
+
+\bibitem[J{\'U}NIOR e FURTADO 2005]{fernandes2005politicas}
+\abntrefinfo{J{\'U}NIOR e FURTADO}{J{\'U}NIOR; FURTADO}{2005}
+{J{\'U}NIOR, O. F.; FURTADO, C. Pol{\'\i}ticas p{\'u}blicas: o poder de compra
+  do governo.
+\emph{Desafios do Desenvolvimento}, v.~2, n.~10, 2005.}
+
+\bibitem[Larman 2002]{larman2002utilizando}
+\abntrefinfo{Larman}{LARMAN}{2002}
+{LARMAN, C. \emph{Utilizando UML e padr{\~o}es}. [S.l.]: Bookman Editora,
+  2002.}
+
+\bibitem[LAUNDON e LAUNDON 2007]{laundon2007sistemas}
+\abntrefinfo{LAUNDON e LAUNDON}{LAUNDON; LAUNDON}{2007}
+{LAUNDON, K.~C.; LAUNDON, J.~P. \emph{Sistemas de informa{\c{c}}{\~o}es
+  gerenciais}. [S.l.]: S{\~a}o Paulo: Pearson Prentice Hall, 2007.}
+
+\bibitem[Mazuco 2017]{mazuco2017percepccoes}
+\abntrefinfo{Mazuco}{MAZUCO}{2017}
+{MAZUCO, A. S. d.~C. Percep{\c{c}}{\~o}es de pr{\'a}ticas {\'a}geis em
+  desenvolvimento de software: benef{\'\i}cios e desafios.
+2017.}
+
+\bibitem[Meirelles 2011]{meirelles2011direito}
+\abntrefinfo{Meirelles}{MEIRELLES}{2011}
+{MEIRELLES, H.~L. Direito administrativo brasileiro. s{\~a}o paulo: Malheiros,
+  2006.
+\emph{Direito de Construir. 10{\textordfeminine} ed. S{\~a}o Paulo: Malheiros},
+  2011.}
+
+\bibitem[MELLO 2009]{mello2009celso}
+\abntrefinfo{MELLO}{MELLO}{2009}
+{MELLO, C. A. B.~d. Celso ant{\^o}nio bandeira de.
+\emph{Curso de direito administrativo}, v.~20, 2009.}
+
+\bibitem[Minetto 2007]{minetto2007frameworks}
+\abntrefinfo{Minetto}{MINETTO}{2007}
+{MINETTO, E.~L. Frameworks para desenvolvimento em php.
+\emph{S{\~a}o Paulo: Novatec}, 2007.}
+
+\bibitem[Nash 2003]{nash2003java}
+\abntrefinfo{Nash}{NASH}{2003}
+{NASH, M. \emph{Java Frameworks and Components: Accelerate Your Web Application
+  Development}. [S.l.]: Cambridge University Press, 2003.}
+
+\bibitem[Niebuhr 2011]{de2011pregao}
+\abntrefinfo{Niebuhr}{NIEBUHR}{2011}
+{NIEBUHR, J. de M. \emph{Preg{\~a}o presencial e eletr{\^o}nico}. [S.l.]:
+  Editora F{\'o}rum, 2011.}
+
+\bibitem[Oliveira 2013]{oliveira2013}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2013}
+{OLIVEIRA, J. C.~d. Princ{\'\i}pios e elementos do processo licitat{\'o}rio -
+  unesp - 2a edi{\c{c}}{\~a}o 2013 aperfei{\c{c}}oamento em licita{\c{c}}{\~a}o
+  e contrata{\c{c}}{\~a}o p{\'u}blica.
+2013.
+Online; acessado em 11 de novembro de 2018.
+Dispon{\'\i}vel em:
+  \url{http://acervodigital.unesp.br/handle/123456789/65615}.}
+
+\bibitem[Oliveira 2015]{oliveira2015desenvolvimento}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2015}
+{OLIVEIRA, P. H.~C. Desenvolvimento de um gerador de api rest seguindo os
+  principais padr{\~o}es da arquitetura.
+2015.}
+
+\bibitem[Oracle 2018]{mysql2018}
+\abntrefinfo{Oracle}{ORACLE}{2018}
+{ORACLE. \emph{MySQL Document Store: top 10 reasons}. 2018.
+Dispon{\'\i}vel em:
+  \url{https://www.mysql.com/why-mysql/white-papers/mysql-document-store-top-10-reasons}.}
+
+\bibitem[Pacheco 2018]{pacheco2018institutos}
+\abntrefinfo{Pacheco}{PACHECO}{2018}
+{PACHECO, E.~M. Os institutos federais: uma revolu{\c{c}}{\~a}o na
+  educa{\c{c}}{\~a}o profissional e tecnol{\'o}gica.
+2018.}
+
+\bibitem[Palestino 2015]{palestino2015estudo}
+\abntrefinfo{Palestino}{PALESTINO}{2015}
+{PALESTINO, C. M.~C. Estudo de tecnologias de controle de vers{\~o}es de
+  software.
+2015.}
+
+\bibitem[Paulk 2013]{paulk2013scrum}
+\abntrefinfo{Paulk}{PAULK}{2013}
+{PAULK, M.~C. A scrum adoption survey.
+\emph{Software Quality Professional}, v.~15, n.~2, 2013.}
+
+\bibitem[Pereira et al. 2017]{pereira2017ferramenta}
+\abntrefinfo{Pereira et al.}{PEREIRA et al.}{2017}
+{PEREIRA, A.~A. et al. Ferramenta web para autoavalia{\c{c}}{\~a}o de
+  ader{\^e}ncia {\`a} norma iso/iec 29110.
+Florian{\'o}polis, SC, 2017.}
+
+\bibitem[Pietro 2006]{di2006500}
+\abntrefinfo{Pietro}{PIETRO}{2006}
+{PIETRO, M. S.~Z. D. 500 anos de direito administrativo brasileiro.
+\emph{Revista Eletr{\^o}nica de Direito do Estado, Salvador, Instituto de
+  Direito P{\'u}blico da Bahia}, n.~5, 2006.}
+
+\bibitem[Pressman e Maxim 2016]{pressman2016engenharia}
+\abntrefinfo{Pressman e Maxim}{PRESSMAN; MAXIM}{2016}
+{PRESSMAN, R.; MAXIM, B. \emph{Engenharia de Software-8{\textordfeminine}
+  Edi{\c{c}}{\~a}o}. [S.l.]: McGraw Hill Brasil, 2016.}
+
+\bibitem[PRESTES e BATISTA 2004]{prestes2004guia}
+\abntrefinfo{PRESTES e BATISTA}{PRESTES; BATISTA}{2004}
+{PRESTES, C.; BATISTA, H.~G. Guia valor econ{\^o}mico de licita{\c{c}}{\~o}es.
+\emph{S{\~a}o Paulo: Globo}, 2004.}
+
+\bibitem[Ribeiro 2007]{ribeiro2007evoluccao}
+\abntrefinfo{Ribeiro}{RIBEIRO}{2007}
+{RIBEIRO, G. L.~V. A evolu{\c{c}}{\~a}o da licita{\c{c}}{\~a}o.
+\emph{Portal da classe cont{\'a}bil}, 2007.}
+
+\bibitem[Salvador 2015]{salvador2015processo}
+\abntrefinfo{Salvador}{SALVADOR}{2015}
+{SALVADOR, M. C.~T. Processo de homologa{\c{c}}{\~a}o: um estudo de caso.
+\emph{Engenharia de Projetos de Software-Florian{\'o}polis}, 2015.}
+
+\bibitem[Sampaio 2004]{sampaio2004xwebprocess}
+\abntrefinfo{Sampaio}{SAMPAIO}{2004}
+{SAMPAIO, A. Xwebprocess: Um processo {\'a}gil para o desenvolvimento de
+  aplica{\c{c}}{\~o}es web.
+\emph{Msc by Research Dissertation}, 2004.}
+
+\bibitem[Santos 2017]{santos2017cp}
+\abntrefinfo{Santos}{SANTOS}{2017}
+{SANTOS, L. G. D. R.~d. Cp-ipem\_pr: Controle de patrim{\^o}nio.
+2017.}
+
+\bibitem[Schimiguel et al. 2017]{schimiguel2017tecnicas}
+\abntrefinfo{Schimiguel et al.}{SCHIMIGUEL et al.}{2017}
+{SCHIMIGUEL, J. et al. T{\'e}cnicas para requisitos funcionais de interfaces
+  homem computador com recursos em elicita{\c{c}}{\~a}o.
+\emph{Research, Society and Development}, Grupo de Pesquisa Metodologias em
+  Ensino e Aprendizagem em Ci{\^e}ncias de Unifei-Itabira, v.~6, n.~1, p.
+  47--63, 2017.}
+
+\bibitem[Silva et al. 2017]{silva2017aplicaccao}
+\abntrefinfo{Silva et al.}{SILVA et al.}{2017}
+{SILVA, G. H.~G. et al. Aplica{\c{c}}{\~a}o backend para consulta de dados de
+  geoposicionamento de {\^o}nibus e previs{\~a}o de chegada.
+Universidade Federal de Uberl{\^a}ndia, 2017.}
+
+\bibitem[Silveira 2015]{silveira2015desenvolvimento}
+\abntrefinfo{Silveira}{SILVEIRA}{2015}
+{SILVEIRA, M. V.~O. Desenvolvimento web com framework phalcon.
+2015.}
+
+\bibitem[Soares 2004]{dos2004metodologias}
+\abntrefinfo{Soares}{SOARES}{2004}
+{SOARES, M. dos S. Metodologias {\'a}geis extreme programming e scrum para o
+  desenvolvimento de software.
+\emph{Revista Eletr{\^o}nica de Sistemas de Informa{\c{c}}{\~a}o}, v.~3, n.~1,
+  2004.}
+
+\bibitem[Sommerville 2007]{sommerville2007engenharia}
+\abntrefinfo{Sommerville}{SOMMERVILLE}{2007}
+{SOMMERVILLE, I. Engenharia de software, 8{\textordfeminine} edi{\c{c}}{\~a}o,
+  tradu{\c{c}}{\~a}o: Selma shin shimizu mel-nikoff, reginaldo arakaki, edilson
+  de andrade barbosa.
+\emph{S{\~a}o Paulo: Pearson Addison-Wesley}, v.~22, p.~103, 2007.}
+
+\bibitem[Souza 2016]{de2016estudo}
+\abntrefinfo{Souza}{SOUZA}{2016}
+{SOUZA, P. M.~R. de.
+\emph{UM ESTUDO SOBRE PADR{\~O}ES E TECNOLOGIAS PARA O DESENVOLVIMENTO
+  WEB-FRONT-END}.
+Tese (Doutorado) --- Universidade Federal do Rio de Janeiro, 2016.}
+
+\bibitem[StackOverflow 2018]{bancomaisusado}
+\abntrefinfo{StackOverflow}{STACKOVERFLOW}{2018}
+{STACKOVERFLOW. Developer survey results 2018.
+2018.
+Online; acessado em 19 de novembro de 2018.
+Dispon{\'\i}vel em:
+  \url{https://insights.stackoverflow.com/survey/2018/\#technology}.}
+
+\bibitem[Thesing et al. 2012]{thesing2012municipios}
+\abntrefinfo{Thesing et al.}{THESING et al.}{2012}
+{THESING, J. et al. \emph{Munic{\'\i}pios e estados: experiencias com arranjos
+  cooperativos}.
+[S.l.], 2012.}
+
+\bibitem[Vargas 2014]{vargas2014manual}
+\abntrefinfo{Vargas}{VARGAS}{2014}
+{VARGAS, R.~V. \emph{Manual Pr{\'a}tico do Plano do Projeto-5{\textordfeminine}
+  Edi{\c{c}}{\~a}o: Utilizando o PMBOK Guide}. [S.l.]: Brasport, 2014.}
+
+\end{thebibliography}
