@@ -1,7 +1,7 @@
-#LicitaçãoWeb
+# LicitaçãoWeb
 Sistema para ajudar a melhoria da comunicação entre as Instituições sobre as licitações que estão acontecendo e que iram acontecer.
 
-##Tutorial para montar o ambiente
+## Tutorial para montar o ambiente
 
 1. Programas a ser instalados
 
@@ -64,25 +64,25 @@ https://v2.overleaf.com/6674951497mkxbphrzwncg
 ## Aplicação Web
 Essa aplicação foi gerada usando o JHipster 4.13.2, você pode encontrar a documentação e ajuda em [http://www.jhipster.tech/documentation-archive/v4.13.2](http://www.jhipster.tech/documentation-archive/v4.13.2).
 
-##Back-end
+## Back-end
 
-###Terminologias
+### Terminologias
 
 - Classes da camada do service tera o final service
 - Classe da camada de repository tera o final repository
 - Classe da camada Rest tera o final API
 - Classe com o final DTO, são os objetos usados para transitar os dados
 
-###Camadas
+### Camadas
 
 - Rest: Camada do Spring com as telas e serviços REST
 - Service: Camada que representa os casos de uso do sistema.
 - Repository: Camada que representa a parte do CRUD.
 - Domain: Camada que representa o domínio do sistema(integração com banco de dados).
 
-##Front-end
+## Front-end
 
-###Terminologias
+### Terminologias
 
 - Pasta com o nome da funcionalidade da tela e o que ficara dentro da pasta é a controller,state,service e view.
 - O arquivo de configuração de comunicação entre o back-end e o front-end nomdeDaFuncionalidade.service.js
@@ -90,13 +90,13 @@ Essa aplicação foi gerada usando o JHipster 4.13.2, você pode encontrar a doc
 - O arquivo de controle da tela tera o nome NomeDaFuncionalidade.controller.js
 - a view que é a tela terá o nome NomeDaFuncionalidade.html
 
-###Camadas
+### Camadas
 
 - controller - serve como controladora da view (HTML)
 - state - serve como controladora e definição de rotas(URL)
 - service - serve como comunicação com o back-end através de API Rest
 
-##Como funciona o sistema
+## Como funciona o sistema
 
 Está descrito todas as funcionalidades através dos casos de uso.
 
