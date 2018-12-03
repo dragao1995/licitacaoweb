@@ -1,0 +1,199 @@
+<div class="panel">
+    <a type="button" class="btn btn-warning pull-left" ng-click="vm.voltar();">
+        <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+
+</div>
+
+<br>
+
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+        <span class="panel-title">Filtros de Serviços</span>
+    </div>
+
+    <div class="panel-body">
+
+        <form ng-submit="vm.consultarPorFiltroResposta(true)">
+            <div class="row">
+                <div class="form-group col-sm-2">
+                    <label>Licitação</label>
+                    <input type="text" ng-model="vm.filtro.identificador" class="form-control"/>
+                </div>
+
+                <div class="form-group col-sm-2">
+                    <label>UASG</label>
+                    <input type="number" ng-model="vm.filtro.uasg" class="form-control"/>
+                </div>
+
+                <div class="form-group col-sm-3">
+                    <label>Descrição da UASG</label>
+                    <input type="text" ng-model="vm.filtro.uasgDescricao" class="form-control"/>
+                </div>
+
+                <div class="col-sm-5">
+                    <label>Período</label>
+
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            class="form-control"
+                            uib-datepicker-popup="dd/MM/yyyy"
+                            ng-model="vm.filtro.dataInicial"
+                            is-open="vm.isOpenDataInicial"
+                            readonly="true"
+                            clear-text="Limpar" close-text="Fechar" current-text="Hoje" close-text="Fechar"
+                        />
+                        <span class="input-group-btn">
+                        <button type="button" class="btn btn-default"
+                                ng-click="vm.isOpenDataInicial= true">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+                    </span>
+
+                        <span class="input-group-addon" style="background-color: white; border-color: white;">a</span>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            uib-datepicker-popup="dd/MM/yyyy"
+                            ng-model="vm.filtro.dataFinal"
+                            is-open="vm.isOpenDataFinal"
+                            readonly="true"
+                            clear-text="Limpar" close-text="Fechar" current-text="Hoje" close-text="Fechar"
+                        />
+                        <span class="input-group-btn">
+                        <button type="button" class="btn btn-default"
+                                ng-click="vm.isOpenDataFinal = true">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+                    </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <label>Tipo</label>
+                    <select type="text" class="form-control" ng-model="ctrl.filtro.tipo">
+                        <option value=""></option>
+                        <option value="M">Material</option>
+                        <option value="S">Serviço</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-2">
+                    <label>Codigo</label>
+                    <input type="number" ng-model="vm.filtro.codigo" class="form-control" ng-disabled="!ctrl.filtro.tipo"/>
+                </div>
+
+                <div class="col-sm-5">
+                    <label>Descrição</label>
+                    <input type="text" ng-model="vm.filtro.descricao" class="form-control" ng-disabled="!ctrl.filtro.tipo"/>
+                </div>
+
+                <div class="col-sm-3">
+                    <label>Status</label>
+                    <select type="text" class="form-control" ng-model="ctrl.filtro.status">
+                        <option value=""></option>
+                        <option value="Aceito">Aceito</option>
+                        <option value="Aguardando resposta">Aguardando resposta</option>
+                        <option value="Rejeitado">Rejeitado</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-sm-12 text-right">
+                    <br/>
+                    <button type="submit" class="btn btn-primary">Consultar
+                    </button>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<div class="panel panel-default" ng-show="vm.tabelaVO.data.length > 0">
+
+    <div class="panel-heading">
+        <span class="panel-title">Resultado da Consulta</span>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="panel-loading" ng-show="vm.tabelaVO.isLoading"></div>
+
+
+        <table class="table table-responsive table-bordered" id="tabelaVO" ng-table="vm.tabelaVO">
+
+            <tr ng-repeat="row in vm.tabelaVO.data track by $index" idEntidade="{{row.id}}">
+
+                <td class="col-sm-1" data-title="'Licitação'" sortable="'tb.licitacao.identificador'">
+                    {{row.licitacao.identificador}}
+                </td>
+
+                <td class="col-sm-4" data-title="'UASG'" sortable="'tb.licitacao.uasg'">
+                    {{row.licitacao.uasg}} - {{row.licitacao.uasgDescricao}}
+                </td>
+
+                <td class="col-sm-4" data-title="'Material ou Serviço'">
+                    <span ng-if="row.material != null">{{row.material.codigo}} - {{row.material.descricao}}</span> <span ng-if="row.servico != null">{{row.servico.codigo}} - {{row.servico.descricao}}</span>
+                </td>
+
+                <td class="col-sm-1" data-title="'Data do Pedido'" sortable="'tb.dataInicio'">
+                    {{row.dataInicio| date: 'dd/MM/yyyy'}}
+                </td>
+
+                <td class="col-sm-1" data-title="'Status'" sortable="'tb.status'">
+                    {{row.status}}
+                </td>
+
+                <td class="col-sm-1" data-title="''">
+                    <button data-target="#modalResposta" data-toggle="modal" ng-click="vm.selected = row;" ng-disabled="row.status == 'Aguardando resposta'" class="btn btn-success">Resposta</button>
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+<!-- Modal de confirmar pedido -->
+<div class="modal fade #myModal-lg" id="modalResposta" role="dialog" aria-labelledby="modalResposta" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <h4 class="modal-title">Resposta</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group col-sm-12">
+                        <textarea ng-disabled="true" rows="4" class="form-control" type="text"
+                                  ng-model="vm.selected.resposta"
+                                  maxlength="250" block-typing></textarea>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
+            </div>
+        </div>
+    </div>
+</div>
+

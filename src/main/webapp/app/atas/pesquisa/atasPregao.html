@@ -1,0 +1,86 @@
+<div>
+    <form class="form-horizontal" name="formulario">
+        <h3 class="md-headline">Consultar Ata de Pregão</h3>
+        <div layout="row">
+            <md-input-container class="md-icon-float md-block">
+                <label>código uasg </label>
+                <input ng-model="filtro.uasg" type="text">
+            </md-input-container>
+
+            <md-input-container class="md-icon-float md-block" flex="50">
+                <label>número pregão</label>
+                <input ng-model="filtro.numero" type="text">
+            </md-input-container>
+        </div>
+        <label>Período de Abertura da Sessão Pública</label>
+
+        <div flex="1">
+            <md-input-container>
+                <label>de:</label>
+                <md-datepicker ng-model="filtro.periodoaberturade"></md-datepicker>
+            </md-input-container>
+
+            <md-input-container>
+                <label>até:</label>
+                <md-datepicker ng-model="filtro.periodoaberturaate"></md-datepicker>
+            </md-input-container>
+        </div>
+
+
+        <section layout="row" layout-sm="column" layout-align="start start">
+            <md-button class="md-raised " style="background-color: #2e7d32;color: white;" ng-click="pesquisar()">
+                pesquisar
+            </md-button>
+            <div class="label">raised</div>
+
+            <md-button class="md-raised " style="background-color: #2e7d32;color: white;" ng-click="limpar()">
+                limpar
+            </md-button>
+            <div class="label">raised</div>
+        </section>
+    </form>
+<br/>
+    <md-card>
+
+        <md-table-container>
+            <table class="mdDataTableResponsive" md-table md-row-select single ng-model="ataSelecionada"
+                   md-progress="promise">
+                <thead md-head>
+                <tr md-row>
+
+                    <th md-column><span>Número</span></th>
+                    <th md-column><span>Código UASG</span></th>
+                    <th md-column><span>Nome da UASG</span></th>
+                    <th md-column><span>Data de Realização</span></th>
+
+                </tr>
+                </thead>
+                <tbody md-body ng-if="atas.length == 0">
+                <tr md-row>
+                    <td md-cell colspan="10">
+                        <h4 class="text-center">Nenhuma ata de pregão encontrada</h4>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody md-body>
+                <tr md-row md-select="ata" md-select-id="numero" md-auto-select
+                    ng-repeat="ata in atas | limitTo: query.limit : (query.page -1) * query.limit">
+
+                    <td md-cell>{{ata.numero}}</td>
+                    <td md-cell>{{ata.uasg}}</td>
+                    <td md-cell>{{ata.recebedores}}</td>
+                    <td md-cell>{{ata.data_assinatura}}</td>
+
+                </tr>
+                </tbody>
+            </table>
+        </md-table-container>
+        <md-table-pagination ng-if="atas.length > 0"
+                             md-label="{page: 'Página:', rowsPerPage: '', of: 'de'}"
+                             md-limit="query.limit"
+                             md-limit-options="limitOptions" md-page="query.page"
+                             md-total="{{atas.length }}"
+                             md-boundary-links="true">
+        </md-table-pagination>
+    </md-card>
+</div>

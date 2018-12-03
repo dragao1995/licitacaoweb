@@ -1,0 +1,106 @@
+entity TbPessoa {
+	nome String required,
+    login String required,
+    senha String required,
+    telefone String required,
+    tipo String
+}
+
+entity TbEndereco {
+	UF String required,
+    cidade String required,
+    municipio String required,
+    endereco String required,
+    observacao String
+}
+
+entity TbContato {
+	email String required,
+    telefone String required,
+    contato String
+}
+
+entity TbInstituicao {
+	nome String required,
+    obeservacao String
+}
+
+entity TbDocumento {
+	documento Blob,
+    status Boolean
+}
+
+entity TbCabecalho {
+	cabecalho Blob required,
+    iniciado Boolean
+}
+
+entity TbLicitacao {
+    uasg Integer required,
+    modalidade Integer required,
+    funcaoResponsavel String required,
+    identificador String required,	
+    situacaoAviso String required
+    objeto String required,
+    informcoesGerais String required,
+    numeroProcesso Integer required,
+    tipoRecurso String required,
+    numeroItens Long required,
+    dataPublicacao LocalDate required,
+    dataEntregaedital LocalDate required,
+    nomeResponsavel String required,
+    enderecoEntregaEdital String required,
+    dataEntregaProposta LocalDate required
+}
+
+entity TbMensagem {
+    dataInicio LocalDate required,
+    dataFinal LocalDate required,
+	descricao Blob
+}
+
+entity TbItem {
+	uasg Integer required,
+    codigoItemMaterial Integer,
+    codigoItemServico Integer,
+    descricaoItem String,
+    numeroLicitacao Integer required,
+    quantidade Long required,
+    unidade String required
+    
+}
+
+entity TbMaterial {
+	codigo Integer required,
+    descricao String required,
+    status Boolean required,
+    sustentavel String required
+}
+
+entity TbServico {
+	codigo Integer required,
+    descricao String required,
+    unidadeMedida String required,
+    cpc String required
+}
+
+relationship OneToOne {
+	TbInstituicao{endereco} to TbEndereco,
+	TbInstituicao{contato} to TbContato,
+    TbMensagem{licitacao} to TbLicitacao,
+    TbMensagem{mensagem} to TbMensagem
+}
+
+relationship ManyToOne {
+	TbPessoa{instituicao} to TbInstituicao,
+    TbPessoa{contato} to TbContato,
+    TbItem{licitacao} to TbLicitacao,
+    TbItem{servico} to TbServico,
+    TbItem{material} to TbMaterial,
+    TbMensagem{cabecalho} to TbCabecalho
+}
+
+relationship ManyToMany {
+	TbInstituicao{cabecalho} to TbCabecalho,
+    TbMensagem{documento} to TbDocumento
+}

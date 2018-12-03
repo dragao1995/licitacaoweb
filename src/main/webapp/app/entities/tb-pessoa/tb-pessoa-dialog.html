@@ -1,0 +1,92 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myTbPessoaLabel">Create or edit a Tb Pessoa</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.tbPessoa.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.tbPessoa.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_nome">Nome</label>
+            <input type="text" class="form-control" name="nome" id="field_nome"
+                    ng-model="vm.tbPessoa.nome"
+                    required/>
+            <div ng-show="editForm.nome.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.nome.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_login">Login</label>
+            <input type="text" class="form-control" name="login" id="field_login"
+                    ng-model="vm.tbPessoa.login"
+                    required/>
+            <div ng-show="editForm.login.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.login.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_senha">Senha</label>
+            <input type="text" class="form-control" name="senha" id="field_senha"
+                    ng-model="vm.tbPessoa.senha"
+                    required/>
+            <div ng-show="editForm.senha.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.senha.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_telefone">Telefone</label>
+            <input type="text" class="form-control" name="telefone" id="field_telefone"
+                    ng-model="vm.tbPessoa.telefone"
+                    required/>
+            <div ng-show="editForm.telefone.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.telefone.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_tipo">Tipo</label>
+            <input type="text" class="form-control" name="tipo" id="field_tipo"
+                    ng-model="vm.tbPessoa.tipo"
+                    />
+        </div>
+
+        <div class="form-group">
+            <label for="field_instituicao">Instituicao</label>
+            <select class="form-control" id="field_instituicao" name="instituicao" ng-model="vm.tbPessoa.instituicao" ng-options="tbInstituicao as tbInstituicao.id for tbInstituicao in vm.tbinstituicaos track by tbInstituicao.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_contato">Contato</label>
+            <select class="form-control" id="field_contato" name="contato" ng-model="vm.tbPessoa.contato" ng-options="tbContato as tbContato.id for tbContato in vm.tbcontatoes track by tbContato.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,30 @@
+
+<div>
+    <h2><span>Tb Cabecalho</span> {{vm.tbCabecalho.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Cabecalho</span></dt>
+        <dd>
+            <div ng-if="vm.tbCabecalho.cabecalho">
+                <a ng-click="vm.openFile(vm.tbCabecalho.cabecalhoContentType, vm.tbCabecalho.cabecalho)">open</a>
+                {{vm.tbCabecalho.cabecalhoContentType}}, {{vm.byteSize(vm.tbCabecalho.cabecalho)}}
+            </div>
+        </dd>
+        <dt><span>Iniciado</span></dt>
+        <dd>
+            <span>{{vm.tbCabecalho.iniciado}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="tb-cabecalho-detail.edit({id:vm.tbCabecalho.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

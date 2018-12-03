@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span>Tb Material</span> {{vm.tbMaterial.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Codigo</span></dt>
+        <dd>
+            <span>{{vm.tbMaterial.codigo}}</span>
+        </dd>
+        <dt><span>Descricao</span></dt>
+        <dd>
+            <span>{{vm.tbMaterial.descricao}}</span>
+        </dd>
+        <dt><span>Status</span></dt>
+        <dd>
+            <span>{{vm.tbMaterial.status}}</span>
+        </dd>
+        <dt><span>Sustentavel</span></dt>
+        <dd>
+            <span>{{vm.tbMaterial.sustentavel}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="tb-material-detail.edit({id:vm.tbMaterial.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

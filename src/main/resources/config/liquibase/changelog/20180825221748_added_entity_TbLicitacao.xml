@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity TbLicitacao.
+    -->
+    <changeSet id="20180825221748-1" author="jhipster">
+        <createTable tableName="tb_licitacao">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="uasg" type="bigint">
+
+            </column>
+
+            <column name="modalidade" type="bigint">
+
+            </column>
+
+            <column name="funcao_responsavel" type="varchar(255)">
+
+            </column>
+
+            <column name="identificador" type="varchar(255)">
+                <constraints nullable="false" unique="true" />
+            </column>
+
+            <column name="situacao_aviso" type="varchar(255)">
+
+            </column>
+
+            <column name="objeto" type="varchar(1000)">
+
+            </column>
+
+            <column name="informcoes_gerais" type="varchar(255)">
+
+            </column>
+
+            <column name="numero_processo" type="bigint">
+
+            </column>
+
+            <column name="tipo_recurso" type="varchar(255)">
+
+            </column>
+
+            <column name="numero_itens" type="bigint">
+
+            </column>
+
+            <column name="data_publicacao" type="date">
+
+            </column>
+
+            <column name="data_entregaedital" type="date">
+
+            </column>
+
+            <column name="nome_responsavel" type="varchar(255)">
+
+            </column>
+
+            <column name="endereco_entrega_edital" type="varchar(255)">
+
+            </column>
+
+            <column name="data_entrega_proposta" type="date">
+
+            </column>
+
+            <column name="uasg_descricao" type="varchar(1000)">
+
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

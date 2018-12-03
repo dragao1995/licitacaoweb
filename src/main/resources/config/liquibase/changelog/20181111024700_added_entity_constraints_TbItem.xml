@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity TbItem.
+    -->
+    <changeSet id="20181111024700-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="licitacao_id"
+                                 baseTableName="tb_item"
+                                 constraintName="fk_tb_item_licitacao_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_licitacao"/>
+
+        <addForeignKeyConstraint baseColumnNames="servico_id"
+                                 baseTableName="tb_item"
+                                 constraintName="fk_tb_item_servico_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_servico"/>
+
+        <addForeignKeyConstraint baseColumnNames="material_id"
+                                 baseTableName="tb_item"
+                                 constraintName="fk_tb_item_material_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_material"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,216 @@
+<div class="panel">
+    <a type="button" class="btn btn-warning pull-left" ng-click="vm.voltar();">
+        <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+
+</div>
+
+<br>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span class="panel-title">Licitação</span>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+
+            <div class="form-group col-sm-3">
+                <label>identificador</label>
+                <input type="text" ng-model="vm.tabelaVO.licitacao.identificador" class="form-control"
+                       ng-disabled="true"/>
+            </div>
+
+            <div class="form-group col-sm-3">
+                <label>numeroProcesso</label>
+                <input type="number" ng-model="vm.tabelaVO.licitacao.numeroProcesso" class="form-control"
+                       ng-disabled="true"/>
+            </div>
+
+            <div class="form-group col-sm-2">
+                <label>UASG</label>
+                <input type="number" ng-model="vm.tabelaVO.licitacao.uasg" class="form-control" ng-disabled="true"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Descrição da UASG</label>
+                <textarea ng-disabled="true" rows="4" class="form-control" type="text"
+                          ng-model="vm.tabelaVO.licitacao.uasgDescricao"
+                          maxlength="250" block-typing></textarea>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="panel panel-default" ng-if="vm.tabelaVO.material != undefined">
+    <div class="panel-heading">
+        <span class="panel-title">Material Requisitado</span>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="row">
+            <div class="form-group col-sm-2">
+                <label>Quantidade</label>
+                <input type="text" ng-model="vm.tabelaVO.quantidade" class="form-control" ng-disabled="true"/>
+            </div>
+            <div class="form-group col-sm-2">
+                <label>Codigo</label>
+                <input type="number" ng-model="vm.tabelaVO.material.codigo" class="form-control" ng-disabled="true"/>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <label>Descrição</label>
+                <textarea ng-disabled="true" rows="4" class="form-control" type="text"
+                          ng-model="vm.tabelaVO.material.descricao"
+                          maxlength="250" block-typing></textarea>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default" ng-if="vm.tabelaVO.servico != undefined">
+    <div class="panel-heading">
+        <span class="panel-title">Serviço Requisitado</span>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+
+            <div class="form-group col-sm-2">
+                <label>Quantidade</label>
+                <input type="text" ng-model="vm.tabelaVO.quantidade" class="form-control" ng-disabled="true"/>
+            </div>
+
+            <div class="form-group col-sm-2">
+                <label>Codigo</label>
+                <input type="number" ng-model="vm.tabelaVO.servico.codigo" class="form-control" ng-disabled="true"/>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <label>Descrição</label>
+                <textarea ng-disabled="true" rows="4" class="form-control" type="text"
+                          ng-model="vm.tabelaVO.servico.descricao"
+                          maxlength="250" block-typing></textarea>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h3 class="text-center"> Confirma a solicitação?</h3>
+        <div class="form-group col-sm-3">
+
+        </div>
+        <div class="form-group col-sm-6">
+            <label>Observação</label>
+            <textarea rows="4" class="form-control" type="text"
+            ng-model="vm.filtro.observacao"
+            maxlength="1000" block-typing></textarea>
+        </div>
+
+        <div class="form-group col-sm-5">
+
+        </div>
+        <div class="col-sm-6">
+            <button data-target="#modalConfirmar" data-toggle="modal" class="btn btn-success bottom-center" ng-disabled="!vm.filtro.observacao">Sim
+            </button>
+            <button data-target="#modalRejeitar" data-toggle="modal" class="btn btn-danger bottom-center" ng-disabled="!vm.filtro.observacao">Não
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal de modalRejeitar -->
+<div class="modal fade #myModal-lg" id="modalRejeitar" role="dialog" aria-labelledby="modalRejeitar" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" ng-if="vm.ok == undefined" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <button type="button" class="close" ng-if="vm.ok != undefined" ng-click="vm.voltarAnalise()" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Rejeitar Pedido</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row" ng-if="vm.ok == undefined">
+                    <div class="form-group col-sm-12">
+                        <label>Tem certeza que deseja Rejeitar o pedido de {{vm.tabelaVO.quantidade}}
+                            <span ng-if="vm.tabelaVO.servico != undefined">{{vm.tabelaVO.servico.descricao}}</span>
+                            <span ng-if="vm.tabelaVO.material != undefined">{{vm.tabelaVO.material.descricao}}</span>
+                            na licitação de UASG {{vm.tabelaVO.licitacao.uasg}}?</label>
+                    </div>
+                </div>
+
+                <div class="row" ng-if="vm.ok != undefined">
+                    <div class="form-group col-sm-12">
+                        <label>Respondido com sucesso</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-if="vm.ok == undefined">Voltar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-if="vm.ok != undefined" ng-click="vm.voltarAnalise()">Sair</button>
+                <button type="button" class="btn btn-primary" ng-if="vm.ok == undefined" ng-click="vm.rejeitarAnalise()">Sim</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal de confirmar pedido -->
+<div class="modal fade #myModal-lg" id="modalConfirmar" role="dialog" aria-labelledby="modalConfirmar" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" ng-if="vm.ok == undefined" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <button type="button" class="close" ng-if="vm.ok != undefined" ng-click="vm.voltarAnalise()" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Confirmar Pedido</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row" ng-if="vm.ok == undefined">
+                    <div class="form-group col-sm-12">
+                        <label>Tem certeza que deseja confirmar o pedido de {{vm.tabelaVO.quantidade}}
+                            <span ng-if="vm.tabelaVO.servico != undefined">{{vm.tabelaVO.servico.descricao}}</span>
+                            <span ng-if="vm.tabelaVO.material != undefined">{{vm.tabelaVO.material.descricao}}</span>
+                            na licitação de UASG {{vm.tabelaVO.licitacao.uasg}}?</label>
+                    </div>
+                </div>
+
+                <div class="row" ng-if="vm.ok != undefined">
+                    <div class="form-group col-sm-12">
+                        <label>Respondido com sucesso</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-if="vm.ok == undefined">Voltar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-if="vm.ok != undefined" ng-click="vm.voltarAnalise()">Sair</button>
+                <button type="button" class="btn btn-primary" ng-if="vm.ok == undefined" ng-click="vm.confirmarAnalise()">Sim</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

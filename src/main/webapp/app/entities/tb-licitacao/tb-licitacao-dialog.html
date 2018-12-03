@@ -1,0 +1,234 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myTbLicitacaoLabel">Create or edit a Tb Licitacao</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.tbLicitacao.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.tbLicitacao.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_uasg">Uasg</label>
+            <input type="number" class="form-control" name="uasg" id="field_uasg"
+                    ng-model="vm.tbLicitacao.uasg"
+                    required/>
+            <div ng-show="editForm.uasg.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.uasg.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.uasg.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_modalidade">Modalidade</label>
+            <input type="number" class="form-control" name="modalidade" id="field_modalidade"
+                    ng-model="vm.tbLicitacao.modalidade"
+                    required/>
+            <div ng-show="editForm.modalidade.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.modalidade.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.modalidade.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_funcaoResponsavel">Funcao Responsavel</label>
+            <input type="text" class="form-control" name="funcaoResponsavel" id="field_funcaoResponsavel"
+                    ng-model="vm.tbLicitacao.funcaoResponsavel"
+                    required/>
+            <div ng-show="editForm.funcaoResponsavel.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.funcaoResponsavel.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_identificador">Identificador</label>
+            <input type="text" class="form-control" name="identificador" id="field_identificador"
+                    ng-model="vm.tbLicitacao.identificador"
+                    required/>
+            <div ng-show="editForm.identificador.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.identificador.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_situacaoAviso">Situacao Aviso</label>
+            <input type="text" class="form-control" name="situacaoAviso" id="field_situacaoAviso"
+                    ng-model="vm.tbLicitacao.situacaoAviso"
+                    required/>
+            <div ng-show="editForm.situacaoAviso.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.situacaoAviso.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_objeto">Objeto</label>
+            <input type="text" class="form-control" name="objeto" id="field_objeto"
+                    ng-model="vm.tbLicitacao.objeto"
+                    required/>
+            <div ng-show="editForm.objeto.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.objeto.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_informcoesGerais">Informcoes Gerais</label>
+            <input type="text" class="form-control" name="informcoesGerais" id="field_informcoesGerais"
+                    ng-model="vm.tbLicitacao.informcoesGerais"
+                    required/>
+            <div ng-show="editForm.informcoesGerais.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.informcoesGerais.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_numeroProcesso">Numero Processo</label>
+            <input type="number" class="form-control" name="numeroProcesso" id="field_numeroProcesso"
+                    ng-model="vm.tbLicitacao.numeroProcesso"
+                    required/>
+            <div ng-show="editForm.numeroProcesso.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.numeroProcesso.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.numeroProcesso.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_tipoRecurso">Tipo Recurso</label>
+            <input type="text" class="form-control" name="tipoRecurso" id="field_tipoRecurso"
+                    ng-model="vm.tbLicitacao.tipoRecurso"
+                    required/>
+            <div ng-show="editForm.tipoRecurso.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.tipoRecurso.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_numeroItens">Numero Itens</label>
+            <input type="number" class="form-control" name="numeroItens" id="field_numeroItens"
+                    ng-model="vm.tbLicitacao.numeroItens"
+                    required/>
+            <div ng-show="editForm.numeroItens.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.numeroItens.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.numeroItens.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dataPublicacao">Data Publicacao</label>
+                <div class="input-group">
+                    <input id="field_dataPublicacao" type="text" class="form-control" name="dataPublicacao" uib-datepicker-popup="{{dateformat}}" ng-model="vm.tbLicitacao.dataPublicacao" is-open="vm.datePickerOpenStatus.dataPublicacao"
+                    required/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dataPublicacao')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.dataPublicacao.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.dataPublicacao.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dataEntregaedital">Data Entregaedital</label>
+                <div class="input-group">
+                    <input id="field_dataEntregaedital" type="text" class="form-control" name="dataEntregaedital" uib-datepicker-popup="{{dateformat}}" ng-model="vm.tbLicitacao.dataEntregaedital" is-open="vm.datePickerOpenStatus.dataEntregaedital"
+                    required/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dataEntregaedital')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.dataEntregaedital.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.dataEntregaedital.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_nomeResponsavel">Nome Responsavel</label>
+            <input type="text" class="form-control" name="nomeResponsavel" id="field_nomeResponsavel"
+                    ng-model="vm.tbLicitacao.nomeResponsavel"
+                    required/>
+            <div ng-show="editForm.nomeResponsavel.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.nomeResponsavel.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_enderecoEntregaEdital">Endereco Entrega Edital</label>
+            <input type="text" class="form-control" name="enderecoEntregaEdital" id="field_enderecoEntregaEdital"
+                    ng-model="vm.tbLicitacao.enderecoEntregaEdital"
+                    required/>
+            <div ng-show="editForm.enderecoEntregaEdital.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.enderecoEntregaEdital.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dataEntregaProposta">Data Entrega Proposta</label>
+                <div class="input-group">
+                    <input id="field_dataEntregaProposta" type="text" class="form-control" name="dataEntregaProposta" uib-datepicker-popup="{{dateformat}}" ng-model="vm.tbLicitacao.dataEntregaProposta" is-open="vm.datePickerOpenStatus.dataEntregaProposta"
+                    required/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dataEntregaProposta')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.dataEntregaProposta.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.dataEntregaProposta.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

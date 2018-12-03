@@ -1,0 +1,43 @@
+<md-dialog aria-label="Informações sobre a licitação">
+<form ng-cloak>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Informações sobre a licitação</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="cancel()">
+                <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+            <p>Status da Licitação: <span class="radioValue">{{ data.group1 }}</span> </p>
+
+            <md-radio-group ng-model="data.group1">
+
+                <md-radio-button value="Não Iniciado">Não Iniciado</md-radio-button>
+                <md-radio-button value="Andamento"> Andamento </md-radio-button>
+                <md-radio-button value="Finalizado">Finalizado</md-radio-button>
+
+            </md-radio-group>
+            <md-input-container class="md-icon-float md-block">
+                <label>Informações Sobre o Documento</label>
+                <input ng-model="filtro.nItem" type="text">
+            </md-input-container>
+            <input class="ng-hide" id="input-file-id" multiple type="file" />
+            <label for="input-file-id" class="md-button md-raised md-primary">Insira o documento</label>
+        </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+        <span flex></span>
+        <md-button ng-click="answer('not useful')">
+            Cancelar
+        </md-button>
+        <md-button ng-click="answer('useful')">
+            Salvar
+        </md-button>
+    </md-dialog-actions>
+</form>
+</md-dialog>

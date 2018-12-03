@@ -1,0 +1,52 @@
+
+<div>
+    <h2><span>Tb Mensagem</span> {{vm.tbMensagem.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Data Inicio</span></dt>
+        <dd>
+            <span>{{vm.tbMensagem.dataInicio | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span>Data Final</span></dt>
+        <dd>
+            <span>{{vm.tbMensagem.dataFinal | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span>Descricao</span></dt>
+        <dd>
+            <div ng-if="vm.tbMensagem.descricao">
+                <a ng-click="vm.openFile(vm.tbMensagem.descricaoContentType, vm.tbMensagem.descricao)">open</a>
+                {{vm.tbMensagem.descricaoContentType}}, {{vm.byteSize(vm.tbMensagem.descricao)}}
+            </div>
+        </dd>
+        <dt><span>Licitacao</span></dt>
+        <dd>
+            <a ui-sref="tb-licitacao-detail({id:vm.tbMensagem.licitacao.id})">{{vm.tbMensagem.licitacao.id}}</a>
+        </dd>
+        <dt><span>Mensagem</span></dt>
+        <dd>
+            <a ui-sref="tb-mensagem-detail({id:vm.tbMensagem.mensagem.id})">{{vm.tbMensagem.mensagem.id}}</a>
+        </dd>
+        <dt><span>Cabecalho</span></dt>
+        <dd>
+            <a ui-sref="tb-cabecalho-detail({id:vm.tbMensagem.cabecalho.id})">{{vm.tbMensagem.cabecalho.id}}</a>
+        </dd>
+        <dt><span>Documento</span></dt>
+        <dd>
+            <span ng-repeat="documento in vm.tbMensagem.documentos">
+                <a ui-sref="tb-documento-detail({id: documento.id})">{{documento.id}}</a>{{$last ? '' : ', '}}
+            </span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="tb-mensagem-detail.edit({id:vm.tbMensagem.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

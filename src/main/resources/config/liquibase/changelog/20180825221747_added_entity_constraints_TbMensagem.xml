@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity TbMensagem.
+    -->
+    <changeSet id="20180825221747-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="licitacao_id"
+                                 baseTableName="tb_mensagem"
+                                 constraintName="fk_tb_mensagem_licitacao_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_licitacao"/>
+
+        <addForeignKeyConstraint baseColumnNames="mensagem_id"
+                                 baseTableName="tb_mensagem"
+                                 constraintName="fk_tb_mensagem_mensagem_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_mensagem"/>
+
+        <addForeignKeyConstraint baseColumnNames="cabecalho_id"
+                                 baseTableName="tb_mensagem"
+                                 constraintName="fk_tb_mensagem_cabecalho_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_cabecalho"/>
+
+        <addForeignKeyConstraint baseColumnNames="tb_mensagems_id"
+                                 baseTableName="tb_mensagem_documento"
+                                 constraintName="fk_tb_mensagem_documento_tb_mensagems_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_mensagem"/>
+        <addForeignKeyConstraint baseColumnNames="documentos_id"
+                                 baseTableName="tb_mensagem_documento"
+                                 constraintName="fk_tb_mensagem_documento_documentos_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_documento"/>
+        
+    </changeSet>
+</databaseChangeLog>

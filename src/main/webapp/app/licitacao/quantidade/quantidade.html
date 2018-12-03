@@ -1,0 +1,155 @@
+<div class="panel">
+    <a type="button" class="btn btn-warning pull-left" ng-click="vm.voltar();">
+        <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+
+</div>
+
+<br>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span class="panel-title">Licitação</span>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="form-group col-sm-3">
+                <label>identificador</label>
+                <input type="text" ng-model="vm.licitacao.identificador" class="form-control" ng-disabled="true"/>
+            </div>
+
+            <div class="form-group col-sm-3">
+                <label>numeroProcesso</label>
+                <input type="number" ng-model="vm.licitacao.numeroProcesso" class="form-control" ng-disabled="true"/>
+            </div>
+
+            <div class="form-group col-sm-2">
+                <label>UASG</label>
+                <input type="number" ng-model="vm.licitacao.uasg" class="form-control" ng-disabled="true"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Descrição da UASG</label>
+                <textarea ng-disabled="true" rows="4" class="form-control" type="text"
+                          ng-model="vm.licitacao.uasgDescricao"
+                          maxlength="250" block-typing></textarea>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="panel panel-default" ng-if="vm.material != undefined">
+    <div class="panel-heading">
+        <span class="panel-title">Material</span>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="row">
+            <div class="form-group col-sm-4">
+                <label>Codigo</label>
+                <input type="number" ng-model="vm.material.codigo" class="form-control" ng-disabled="true"/>
+            </div>
+
+            <div class="form-group col-sm-8">
+                <label>Descrição</label>
+                <input type="text" ng-model="vm.material.descricao" class="form-control" ng-disabled="true"/>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default" ng-if="vm.servico != undefined">
+    <div class="panel-heading">
+        <span class="panel-title">Servico</span>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="form-group col-sm-4">
+                <label>Codigo</label>
+                <input type="number" ng-model="vm.servico.codigo" class="form-control" ng-disabled="true"/>
+            </div>
+
+            <div class="form-group col-sm-8">
+                <label>Descrição</label>
+                <input type="text" ng-model="vm.servico.descricao" class="form-control" ng-disabled="true"/>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h3 class="text-center"> Selecione a quantidade desejada</h3>
+        <div class="form-group col-sm-3">
+
+        </div>
+        <div class="form-group col-sm-6">
+            <label>Quantidade</label>
+            <input type="text" ng-model="vm.filtro.quantidade" class="form-control"/>
+        </div>
+
+        <div class="form-group col-sm-6">
+
+        </div>
+        <div class="col-sm-6">
+            <button data-target="#modalConfirmar" data-toggle="modal" class="btn btn-success bottom-center" ng-disabled="!vm.filtro.quantidade">Solicitar
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal de confirmar pedido -->
+<div class="modal fade #myModal-lg" id="modalConfirmar" role="dialog" aria-labelledby="modalConfirmar" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"  ng-if="vm.protocolo == undefined"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <button type="button" class="close" data-dismiss="modal" ng-click="vm.sair()"  ng-if="vm.protocolo != undefined"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Confirmar Pedido</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row" ng-if="vm.protocolo == undefined">
+                    <div class="form-group col-sm-12">
+                        <label>Tem certeza que deseja confirmar o pedido de {{vm.filtro.quantidade}}
+                            <span ng-if="vm.servico != undefined">{{vm.servico.descricao}}</span>
+                            <span ng-if="vm.material != undefined">{{vm.material.descricao}}</span>
+                            na licitação de UASG {{vm.licitacao.uasg}}?</label>
+                    </div>
+                </div>
+
+                <div class="row" ng-if="vm.protocolo != undefined">
+
+                    <div class="form-group col-sm-12">
+                        <p><label>O pedido gerou o protocolo: {{vm.protocolo}}</label></p>
+                        <p>Podendo ser verificado no item de menu “Requisições”. </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-if="vm.protocolo == undefined">Não</button>
+                <button type="button" class="btn btn-default" ng-click="vm.sair()" data-dismiss="modal" ng-if="vm.protocolo != undefined">Sair</button>
+                <button type="button" class="btn btn-primary" ng-if="vm.protocolo == undefined"
+                        ng-click="vm.solicitar()">Sim
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

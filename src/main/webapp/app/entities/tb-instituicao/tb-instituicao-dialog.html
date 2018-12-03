@@ -1,0 +1,60 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myTbInstituicaoLabel">Create or edit a Tb Instituicao</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.tbInstituicao.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.tbInstituicao.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_nome">Nome</label>
+            <input type="text" class="form-control" name="nome" id="field_nome"
+                    ng-model="vm.tbInstituicao.nome"
+                    required/>
+            <div ng-show="editForm.nome.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.nome.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_obeservacao">Obeservacao</label>
+            <input type="text" class="form-control" name="obeservacao" id="field_obeservacao"
+                    ng-model="vm.tbInstituicao.obeservacao"
+                    />
+        </div>
+
+        <div class="form-group">
+            <label for="field_endereco">Endereco</label>
+            <select class="form-control" id="field_endereco" name="endereco" ng-model="vm.tbInstituicao.endereco" ng-options="tbEndereco as tbEndereco.id for tbEndereco in vm.enderecos | orderBy:'id' track by tbEndereco.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_contato">Contato</label>
+            <select class="form-control" id="field_contato" name="contato" ng-model="vm.tbInstituicao.contato" ng-options="tbContato as tbContato.id for tbContato in vm.contatoes | orderBy:'id' track by tbContato.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_cabecalho">Cabecalho</label>
+            <select class="form-control" id="field_cabecalho" multiple name="cabecalho" ng-model="vm.tbInstituicao.cabecalhos" ng-options="tbCabecalho as tbCabecalho.id for tbCabecalho in vm.tbcabecalhos track by tbCabecalho.id"></select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

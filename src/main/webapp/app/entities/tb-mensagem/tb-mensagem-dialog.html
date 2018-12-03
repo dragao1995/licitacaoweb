@@ -1,0 +1,102 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myTbMensagemLabel">Create or edit a Tb Mensagem</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.tbMensagem.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.tbMensagem.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dataInicio">Data Inicio</label>
+                <div class="input-group">
+                    <input id="field_dataInicio" type="text" class="form-control" name="dataInicio" uib-datepicker-popup="{{dateformat}}" ng-model="vm.tbMensagem.dataInicio" is-open="vm.datePickerOpenStatus.dataInicio"
+                    required/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dataInicio')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.dataInicio.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.dataInicio.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dataFinal">Data Final</label>
+                <div class="input-group">
+                    <input id="field_dataFinal" type="text" class="form-control" name="dataFinal" uib-datepicker-popup="{{dateformat}}" ng-model="vm.tbMensagem.dataFinal" is-open="vm.datePickerOpenStatus.dataFinal"
+                    required/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('dataFinal')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.dataFinal.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.dataFinal.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group" ngf-drop ngf-change="vm.setDescricao($file, vm.tbMensagem)">
+            <label class="control-label" for="field_descricao">Descricao</label>
+            <div>
+                <div ng-if="vm.tbMensagem.descricao" class="help-block clearfix">
+                    <a class="pull-left" ng-click="vm.openFile(vm.tbMensagem.descricaoContentType, vm.tbMensagem.descricao)">open</a><br>
+                    <span class="pull-left">{{vm.tbMensagem.descricaoContentType}}, {{vm.byteSize(vm.tbMensagem.descricao)}}</span>
+                    <button type="button" ng-click="vm.tbMensagem.descricao=null;vm.tbMensagem.descricaoContentType=null;"
+                            class="btn btn-default btn-xs pull-right">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </div>
+                <button type="button" ngf-select class="btn btn-default btn-block"
+                        ngf-change="vm.setDescricao($file, vm.tbMensagem)">
+                    Add blob
+                </button>
+            </div>
+            <input type="hidden" class="form-control" name="descricao" id="field_descricao"
+                    ng-model="vm.tbMensagem.descricao"
+                    />
+            <input type="hidden" class="form-control" name="descricaoContentType" id="field_descricaoContentType"
+                    ng-model="vm.tbMensagem.descricaoContentType" />
+        </div>
+
+        <div class="form-group">
+            <label for="field_licitacao">Licitacao</label>
+            <select class="form-control" id="field_licitacao" name="licitacao" ng-model="vm.tbMensagem.licitacao" ng-options="tbLicitacao as tbLicitacao.id for tbLicitacao in vm.licitacaos | orderBy:'id' track by tbLicitacao.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_mensagem">Mensagem</label>
+            <select class="form-control" id="field_mensagem" name="mensagem" ng-model="vm.tbMensagem.mensagem" ng-options="tbMensagem as tbMensagem.id for tbMensagem in vm.mensagems | orderBy:'id' track by tbMensagem.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_cabecalho">Cabecalho</label>
+            <select class="form-control" id="field_cabecalho" name="cabecalho" ng-model="vm.tbMensagem.cabecalho" ng-options="tbCabecalho as tbCabecalho.id for tbCabecalho in vm.tbcabecalhos track by tbCabecalho.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_documento">Documento</label>
+            <select class="form-control" id="field_documento" multiple name="documento" ng-model="vm.tbMensagem.documentos" ng-options="tbDocumento as tbDocumento.id for tbDocumento in vm.tbdocumentos track by tbDocumento.id"></select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

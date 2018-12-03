@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221740_added_entity_TbPessoa.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221742_added_entity_TbEndereco.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221743_added_entity_TbContato.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221744_added_entity_TbInstituicao.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221745_added_entity_TbDocumento.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221746_added_entity_TbCabecalho.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221747_added_entity_TbMensagem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221748_added_entity_TbLicitacao.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181111024700_added_entity_TbItem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181111024701_added_entity_TbMaterial.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181111024702_added_entity_TbServico.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180825221740_added_entity_constraints_TbPessoa.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221744_added_entity_constraints_TbInstituicao.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180825221747_added_entity_constraints_TbMensagem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181111024700_added_entity_constraints_TbItem.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

@@ -1,0 +1,122 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myTbItemLabel">Create or edit a Tb Item</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.tbItem.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.tbItem.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_uasg">Uasg</label>
+            <input type="number" class="form-control" name="uasg" id="field_uasg"
+                    ng-model="vm.tbItem.uasg"
+                    required/>
+            <div ng-show="editForm.uasg.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.uasg.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.uasg.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_codigoItemMaterial">Codigo Item Material</label>
+            <input type="number" class="form-control" name="codigoItemMaterial" id="field_codigoItemMaterial"
+                    ng-model="vm.tbItem.codigoItemMaterial"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_codigoItemServico">Codigo Item Servico</label>
+            <input type="number" class="form-control" name="codigoItemServico" id="field_codigoItemServico"
+                    ng-model="vm.tbItem.codigoItemServico"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_descricaoItem">Descricao Item</label>
+            <input type="text" class="form-control" name="descricaoItem" id="field_descricaoItem"
+                    ng-model="vm.tbItem.descricaoItem"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_numeroLicitacao">Numero Licitacao</label>
+            <input type="number" class="form-control" name="numeroLicitacao" id="field_numeroLicitacao"
+                    ng-model="vm.tbItem.numeroLicitacao"
+                    required/>
+            <div ng-show="editForm.numeroLicitacao.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.numeroLicitacao.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.numeroLicitacao.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_quantidade">Quantidade</label>
+            <input type="number" class="form-control" name="quantidade" id="field_quantidade"
+                    ng-model="vm.tbItem.quantidade"
+                    required/>
+            <div ng-show="editForm.quantidade.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.quantidade.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.quantidade.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_unidade">Unidade</label>
+            <input type="text" class="form-control" name="unidade" id="field_unidade"
+                    ng-model="vm.tbItem.unidade"
+                    required/>
+            <div ng-show="editForm.unidade.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.unidade.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="field_licitacao">Licitacao</label>
+            <select class="form-control" id="field_licitacao" name="licitacao" ng-model="vm.tbItem.licitacao" ng-options="tbLicitacao as tbLicitacao.id for tbLicitacao in vm.tblicitacaos track by tbLicitacao.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_servico">Servico</label>
+            <select class="form-control" id="field_servico" name="servico" ng-model="vm.tbItem.servico" ng-options="tbServico as tbServico.id for tbServico in vm.tbservicos track by tbServico.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_material">Material</label>
+            <select class="form-control" id="field_material" name="material" ng-model="vm.tbItem.material" ng-options="tbMaterial as tbMaterial.id for tbMaterial in vm.tbmaterials track by tbMaterial.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,46 @@
+@import "variables";
+
+/*
+ * growl-item styles
+ */
+.growl-container > .growl-item {
+  padding: 10px;
+  padding-right: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+
+.growl-container > button {
+  border: none;
+  outline: none;
+}
+
+
+.alert {
+  border-top: 0;
+  border-left: 0;
+  line-height: 20px !important;
+  position: relative;
+  clear: both;
+  padding: 10px 35px 10px 60px !important;
+  margin-bottom: 10px;
+}
+
+.alert-warning {
+  background: #FFF08F url(#{$imagesFolder}/plc-msg-advertencia.png) no-repeat 0 50%;
+  border-bottom: 1px solid #D3D2AE;
+  color: #907025;
+}
+
+.alert-danger {
+  background: #FFC9C9 url(#{$imagesFolder}/plc-msg-erro.png) no-repeat 0 50%;
+  border-bottom: 1px solid #D6B6BB;
+  color: #A64040;
+}
+
+.alert-success {
+  background: #CBF9A7 url(#{$imagesFolder}/plc-msg-sucesso.png) no-repeat 0 50%;
+  border-bottom: 1px solid #B5D2AE;
+  color: #334F1C;
+}

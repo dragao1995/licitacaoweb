@@ -1,0 +1,89 @@
+<div>
+    <h2>Tb Instituicaos</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="tb-instituicao.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="hidden-xs-down" >
+                        Create new Tb Instituicao
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-8 no-padding-right">
+                <form name="searchForm" class="form-inline">
+                    <div class="input-group pull-right" >
+                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="Query">
+                        <span  class="input-group-btn width-min" >
+                            <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                        <span class="input-group-btn width-min" ng-if="vm.currentSearch">
+                            <button class="btn btn-info" ng-click="vm.clear()">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Nome</span></th>
+                    <th><span>Obeservacao</span></th>
+                    <th><span>Endereco</span></th>
+                    <th><span>Contato</span></th>
+                    <th><span>Cabecalho</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="tbInstituicao in vm.tbInstituicaos track by tbInstituicao.id">
+                    <td><a ui-sref="tb-instituicao-detail({id:tbInstituicao.id})">{{tbInstituicao.id}}</a></td>
+                    <td>{{tbInstituicao.nome}}</td>
+                    <td>{{tbInstituicao.obeservacao}}</td>
+                    <td>
+                        <a ui-sref="tb-endereco-detail({id:tbInstituicao.endereco.id})">{{tbInstituicao.endereco.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="tb-contato-detail({id:tbInstituicao.contato.id})">{{tbInstituicao.contato.id}}</a>
+                    </td>
+                    <td>
+                        <span ng-repeat="cabecalho in tbInstituicao.cabecalhos">
+                            <a class="form-control-static" ui-sref="tb-cabecalho-detail({id: cabecalho.id})">{{cabecalho.id}}</a>{{$last ? '' : ', '}}
+                        </span>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="tb-instituicao-detail({id:tbInstituicao.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="tb-instituicao.edit({id:tbInstituicao.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="tb-instituicao.delete({id:tbInstituicao.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

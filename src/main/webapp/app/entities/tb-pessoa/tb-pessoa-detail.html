@@ -1,0 +1,47 @@
+
+<div>
+    <h2><span>Tb Pessoa</span> {{vm.tbPessoa.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Nome</span></dt>
+        <dd>
+            <span>{{vm.tbPessoa.nome}}</span>
+        </dd>
+        <dt><span>Login</span></dt>
+        <dd>
+            <span>{{vm.tbPessoa.login}}</span>
+        </dd>
+        <dt><span>Senha</span></dt>
+        <dd>
+            <span>{{vm.tbPessoa.senha}}</span>
+        </dd>
+        <dt><span>Telefone</span></dt>
+        <dd>
+            <span>{{vm.tbPessoa.telefone}}</span>
+        </dd>
+        <dt><span>Tipo</span></dt>
+        <dd>
+            <span>{{vm.tbPessoa.tipo}}</span>
+        </dd>
+        <dt><span>Instituicao</span></dt>
+        <dd>
+            <a ui-sref="tb-instituicao-detail({id:vm.tbPessoa.instituicao.id})">{{vm.tbPessoa.instituicao.id}}</a>
+        </dd>
+        <dt><span>Contato</span></dt>
+        <dd>
+            <a ui-sref="tb-contato-detail({id:vm.tbPessoa.contato.id})">{{vm.tbPessoa.contato.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="tb-pessoa-detail.edit({id:vm.tbPessoa.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

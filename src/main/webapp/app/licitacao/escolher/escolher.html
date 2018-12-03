@@ -1,0 +1,112 @@
+<div class="panel">
+    <a type="button" class="btn btn-warning pull-left" ng-click="vm.voltar();">
+        <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+
+</div>
+
+<br>
+
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+        <span class="panel-title">Filtros de Serviços</span>
+    </div>
+
+    <div class="panel-body">
+
+        <form ng-submit="vm.consultarPorFiltro(true)">
+            <div class="row">
+                <div class="form-group col-sm-2">
+                    <label>identificador</label>
+                    <input type="text" ng-model="vm.filtro.identificador" class="form-control"/>
+                </div>
+
+                <div class="form-group col-sm-2">
+                    <label>Numero Processo</label>
+                    <input type="number" ng-model="vm.filtro.numeroProcesso" class="form-control"/>
+                </div>
+
+                <div class="form-group col-sm-2">
+                    <label>UASG</label>
+                    <input type="number" ng-model="vm.filtro.uasg" class="form-control"/>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    <label>Descrição da UASG</label>
+                    <input type="text" ng-model="vm.filtro.uasgDescricao" class="form-control"/>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-sm-12 text-right">
+                    <br/>
+                    <button type="submit" class="btn btn-primary">Consultar
+                    </button>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+<div class="panel panel-default" ng-show="vm.tabelaVO.data.length > 0">
+
+    <div class="panel-heading">
+        <span class="panel-title">Resultado da Consulta</span>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="panel-loading" ng-show="vm.tabelaVO.isLoading"></div>
+
+
+        <table class="table table-responsive table-bordered" id="tabelaVO" ng-table="vm.tabelaVO">
+
+            <tr ng-repeat="row in vm.tabelaVO.data track by $index" idEntidade="{{row.id}}">
+
+                <td>
+                    <input type="checkbox" name="checkbox" ng-checked="vm.selected == row"
+                           ng-true-value={{row}}
+                           ng-model="vm.selected">
+                </td>
+
+                <td class="col-sm-1" data-title="'Identificador'" sortable="'tb.identificador'">
+                    {{row.identificador}}
+                </td>
+
+                <td class="col-sm-1" data-title="'Numero do Processo'" sortable="'tb.numeroProcesso'">
+                    {{row.numeroProcesso}}
+                </td>
+
+                <td class="col-sm-6" data-title="'UASG'" sortable="'tb.uasg'">
+                    {{row.uasg}} - {{row.uasgDescricao}}
+                </td>
+
+                <td class="col-sm-1" data-title="'Publicação'" sortable="'tb.dataPublicacao'">
+                    {{row.dataPublicacao| date: 'dd/MM/yyyy'}}
+                </td>
+
+                <td class="col-sm-1" data-title="'Entrega Edital'" sortable="'tb.dataEntregaedital'">
+                    {{row.dataEntregaedital| date: 'dd/MM/yyyy'}}
+                </td>
+
+                <td class="col-sm-1" data-title="'Entrega Proposta'" sortable="'tb.dataEntregaProposta'">
+                    {{row.dataEntregaProposta| date: 'dd/MM/yyyy'}}
+                </td>
+
+            </tr>
+
+        </table>
+
+        <div class="col-sm-12">
+            <button ng-click="vm.escolher();" ng-disabled="!vm.selected" class="btn btn-success pull-right">Selecionar</button>
+        </div>
+    </div>
+
+</div>

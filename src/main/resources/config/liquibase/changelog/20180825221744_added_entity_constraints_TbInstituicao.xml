@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity TbInstituicao.
+    -->
+    <changeSet id="20180825221744-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="endereco_id"
+                                 baseTableName="tb_instituicao"
+                                 constraintName="fk_tb_instituicao_endereco_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_endereco"/>
+
+        <addForeignKeyConstraint baseColumnNames="contato_id"
+                                 baseTableName="tb_instituicao"
+                                 constraintName="fk_tb_instituicao_contato_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_contato"/>
+
+        <addForeignKeyConstraint baseColumnNames="tb_instituicaos_id"
+                                 baseTableName="tb_instituicao_cabecalho"
+                                 constraintName="fk_tb_instituicao_cabecalho_tb_instituicaos_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_instituicao"/>
+        <addForeignKeyConstraint baseColumnNames="cabecalhos_id"
+                                 baseTableName="tb_instituicao_cabecalho"
+                                 constraintName="fk_tb_instituicao_cabecalho_cabecalhos_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tb_cabecalho"/>
+        
+    </changeSet>
+</databaseChangeLog>

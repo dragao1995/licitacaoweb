@@ -1,0 +1,79 @@
+
+<div>
+    <h2><span>Tb Licitacao</span> {{vm.tbLicitacao.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Uasg</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.uasg}}</span>
+        </dd>
+        <dt><span>Modalidade</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.modalidade}}</span>
+        </dd>
+        <dt><span>Funcao Responsavel</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.funcaoResponsavel}}</span>
+        </dd>
+        <dt><span>Identificador</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.identificador}}</span>
+        </dd>
+        <dt><span>Situacao Aviso</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.situacaoAviso}}</span>
+        </dd>
+        <dt><span>Objeto</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.objeto}}</span>
+        </dd>
+        <dt><span>Informcoes Gerais</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.informcoesGerais}}</span>
+        </dd>
+        <dt><span>Numero Processo</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.numeroProcesso}}</span>
+        </dd>
+        <dt><span>Tipo Recurso</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.tipoRecurso}}</span>
+        </dd>
+        <dt><span>Numero Itens</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.numeroItens}}</span>
+        </dd>
+        <dt><span>Data Publicacao</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.dataPublicacao | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span>Data Entregaedital</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.dataEntregaedital | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span>Nome Responsavel</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.nomeResponsavel}}</span>
+        </dd>
+        <dt><span>Endereco Entrega Edital</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.enderecoEntregaEdital}}</span>
+        </dd>
+        <dt><span>Data Entrega Proposta</span></dt>
+        <dd>
+            <span>{{vm.tbLicitacao.dataEntregaProposta | date:'mediumDate'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="tb-licitacao-detail.edit({id:vm.tbLicitacao.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,132 @@
+<div>
+
+    <!-- Angular Material Adicionado -->
+    <!--Versão dele está um pouco antiga, quando coloco versões mais nova da problema, mas esta dando para usar-->
+    <!--Adicionei o Angular Material no app.module.js e os script dos js e o link do css no index -->
+    <!--use o site como referencia https://material.angularjs.org/1.1.4/demo/input -->
+    <!--Para pegar cores clique em um dos quadrados depois clique em uma das cores pronto ele ja adicionou no ctrl+c
+    basta usar agora, https://flatuicolors.com/
+
+    Para referencia de angular usando bootstrap
+    https://angular-ui.github.io/bootstrap/-->
+    <!--Alteração nos arquivos de app.modulo, app.state, app.constants ou até na adição de novos js, de um gulp no projeto-->
+    <div ng-cloak>
+        <md-content>
+            <!--PAINEL DE ADESÃO-->
+            <div class="panel panel-success">
+                <div class="panel-heading">Licitação</div>
+            </div>
+
+            <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="Licitação">
+
+                    <!--FORMULARIO-->
+                    <form class="form-horizontal" name="formulario" >
+
+                        <div layout="column" layout-padding ng-cloak>
+                            <br/>
+
+                            <!--SELECIONE CAMPUS
+                            <md-input-container>
+                                <label>Câmpus</label>
+                                <md-select ng-model="filtro.selectedCampus"
+                                           md-on-close="clearSearchTerm()"
+                                           data-md-container-class="selectdemoSelectHeader"
+                                           multiple>
+                                    <md-select-header class="demo-select-header">
+                                        <input ng-model="searchTerm"
+                                               type="search"
+                                               placeholder="Buscar por câmpus.."
+                                               class="demo-header-searchbox md-text">
+                                    </md-select-header>
+                                    <md-optgroup label="vegetables">
+                                        <md-option ng-value="campu" ng-repeat="campu in campus |
+                              filter:searchTerm">{{campu}}</md-option>
+                                    </md-optgroup>
+                                </md-select>
+                            </md-input-container>
+                            -->
+
+                            <md-content class="md-no-momentum">
+
+                                <!--DESCRIÇÃO OBJETO-->
+                                <md-input-container class="md-block">
+                                    <label>Descrição sobre a licitação</label>
+                                    <textarea ng-model="filtro.descricaoObjeto" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
+                                </md-input-container>
+
+                                <!--Nº DO ITEM
+                                <md-input-container class="md-icon-float md-block">
+
+                                    <label>Nº do item</label>
+                                    <input ng-model="filtro.nItem" type="text">
+                                </md-input-container>
+                                -->
+
+                                <!--UASG
+                                <md-input-container class="md-block">
+                                    <input ng-model="filtro.uasg" type="text" placeholder="UASG">
+                                </md-input-container>
+                                 -->
+
+                                <!--Nº DO PREGÃO
+                                <md-input-container class="md-block">
+                                    <input ng-model="filtro.nPregao" type="text" placeholder="Nº do Pregão">
+                                </md-input-container>
+                                -->
+
+                                <!--QUANTIDADE TOTAL DA ATA
+                                <md-input-container class="md-block">
+                                    <input ng-model="filtro.qtdTotalAta" type="text" placeholder="Quantidade Total da Ata">
+                                </md-input-container>
+                                -->
+
+                                <!--QUANTIDADE DEMANDA
+                                <md-input-container class="md-block">
+                                    <input ng-model="filtro.qtdDemanda" type="text" placeholder="Quantidade demandada">
+                                </md-input-container>
+                                -->
+
+                                <!--PELO CAMPUS GERENCIADOR
+                                <md-input-container class="md-block">
+                                    <input ng-model="filtro.campusGerenciador" type="text" placeholder="Pelo Câmpus Gerenciador">
+                                </md-input-container>
+                                -->
+
+                                <!--QUANTIDADE REMANESCENTE
+                                <md-input-container class="md-block">
+                                    <input ng-model="filtro.qtdRemanescente" type="text" placeholder="Quantidade Remanescente">
+                                </md-input-container>
+                                -->
+
+                                <!--PRAZO
+                                <md-input-container>
+                                    <label>Prazo</label>
+                                    <md-datepicker ng-model="filtro.prazo"></md-datepicker>
+                                </md-input-container>
+                                -->
+                            </md-content>
+
+                            <!--BUTTON-->
+                            <section layout="row" layout-sm="column" layout-align="end center" layout-wrap>
+                                <md-button class="md-primary md-raised" ng-click="showAdvanced($event)">
+                                    Informação sobre a licitação
+                                </md-button>
+                                <md-button class="md-raised " style="background-color: #2E7D32;color: white;" ng-click="inserir()">Salvar</md-button>
+                                <div class="label">Raised</div>
+                            </section>
+
+                        </div>
+                    </form>
+                </md-tab>
+                <md-tab label="info">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">Informações sobre a licitação</h1>
+                        <p>Relatorio trazendo status documentos e algo a mais se precisar</p>
+                        <p>criar um relatorio simples.</p>
+                    </md-content>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+
+<div>
+    <h2><span>Tb Item</span> {{vm.tbItem.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Uasg</span></dt>
+        <dd>
+            <span>{{vm.tbItem.uasg}}</span>
+        </dd>
+        <dt><span>Codigo Item Material</span></dt>
+        <dd>
+            <span>{{vm.tbItem.codigoItemMaterial}}</span>
+        </dd>
+        <dt><span>Codigo Item Servico</span></dt>
+        <dd>
+            <span>{{vm.tbItem.codigoItemServico}}</span>
+        </dd>
+        <dt><span>Descricao Item</span></dt>
+        <dd>
+            <span>{{vm.tbItem.descricaoItem}}</span>
+        </dd>
+        <dt><span>Numero Licitacao</span></dt>
+        <dd>
+            <span>{{vm.tbItem.numeroLicitacao}}</span>
+        </dd>
+        <dt><span>Quantidade</span></dt>
+        <dd>
+            <span>{{vm.tbItem.quantidade}}</span>
+        </dd>
+        <dt><span>Unidade</span></dt>
+        <dd>
+            <span>{{vm.tbItem.unidade}}</span>
+        </dd>
+        <dt><span>Licitacao</span></dt>
+        <dd>
+            <a ui-sref="tb-licitacao-detail({id:vm.tbItem.licitacao.id})">{{vm.tbItem.licitacao.id}}</a>
+        </dd>
+        <dt><span>Servico</span></dt>
+        <dd>
+            <a ui-sref="tb-servico-detail({id:vm.tbItem.servico.id})">{{vm.tbItem.servico.id}}</a>
+        </dd>
+        <dt><span>Material</span></dt>
+        <dd>
+            <a ui-sref="tb-material-detail({id:vm.tbItem.material.id})">{{vm.tbItem.material.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="tb-item-detail.edit({id:vm.tbItem.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,41 @@
+
+<div>
+    <h2><span>Tb Instituicao</span> {{vm.tbInstituicao.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Nome</span></dt>
+        <dd>
+            <span>{{vm.tbInstituicao.nome}}</span>
+        </dd>
+        <dt><span>Obeservacao</span></dt>
+        <dd>
+            <span>{{vm.tbInstituicao.obeservacao}}</span>
+        </dd>
+        <dt><span>Endereco</span></dt>
+        <dd>
+            <a ui-sref="tb-endereco-detail({id:vm.tbInstituicao.endereco.id})">{{vm.tbInstituicao.endereco.id}}</a>
+        </dd>
+        <dt><span>Contato</span></dt>
+        <dd>
+            <a ui-sref="tb-contato-detail({id:vm.tbInstituicao.contato.id})">{{vm.tbInstituicao.contato.id}}</a>
+        </dd>
+        <dt><span>Cabecalho</span></dt>
+        <dd>
+            <span ng-repeat="cabecalho in vm.tbInstituicao.cabecalhos">
+                <a ui-sref="tb-cabecalho-detail({id: cabecalho.id})">{{cabecalho.id}}</a>{{$last ? '' : ', '}}
+            </span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="tb-instituicao-detail.edit({id:vm.tbInstituicao.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>
