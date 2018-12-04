@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.10.23)  3 DEC 2018 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.10.23)  4 DEC 2018 08:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1578,7 +1578,7 @@ Underfull \vbox (badness 1082) has occurred while \output is active []
  [33
 
 ]
-<figuras/figura001.png, id=498, 779.16093pt x 443.40656pt>
+<figuras/figura001.png, id=495, 779.16093pt x 443.40656pt>
 File: figuras/figura001.png Graphic file (type png)
 
 <use figuras/figura001.png>
@@ -1625,7 +1625,7 @@ LaTeX Warning: Command \textcircled invalid in math mode on input line 137.
 LaTeX Warning: Reference `https://stackoverflow.com/' on page 38 undefined on i
 nput line 173.
 
-[38] <figuras/figura002.png, id=632, 840.13875pt x 304.13625pt>
+[38] <figuras/figura002.png, id=629, 840.13875pt x 304.13625pt>
 File: figuras/figura002.png Graphic file (type png)
 
 <use figuras/figura002.png>
@@ -1637,14 +1637,14 @@ Underfull \hbox (badness 2027) in paragraph at lines 181--181
 tria de soft-
  []
 
-<figuras/figura003.png, id=637, 864.98157pt x 292.09125pt>
+<figuras/figura003.png, id=634, 864.98157pt x 292.09125pt>
 File: figuras/figura003.png Graphic file (type png)
 
 <use figuras/figura003.png>
 Package pdftex.def Info: figuras/figura003.png used on input line 187.
 (pdftex.def)             Requested size: 432.24861pt x 145.96503pt.
 
-<figuras/figura004.png, id=642, 551.05875pt x 274.77657pt>
+<figuras/figura004.png, id=639, 551.05875pt x 274.77657pt>
 File: figuras/figura004.png Graphic file (type png)
 
 <use figuras/figura004.png>
@@ -1674,19 +1674,19 @@ l.230
 ] [43]
 [44] [45
 
-] <figuras/bdAtualizado.png, id=708, 768.62157pt x 430.60875pt>
+] <figuras/bdAtualizado.png, id=704, 768.62157pt x 430.60875pt>
 File: figuras/bdAtualizado.png Graphic file (type png)
 
 <use figuras/bdAtualizado.png>
-Package pdftex.def Info: figuras/bdAtualizado.png used on input line 58.
+Package pdftex.def Info: figuras/bdAtualizado.png used on input line 57.
 (pdftex.def)             Requested size: 672.59784pt x 376.84085pt.
 
-<figuras/figura005.png, id=712, 1079.03125pt x 583.17876pt>
+<figuras/figura005.png, id=706, 954.56625pt x 553.06625pt>
 File: figuras/figura005.png Graphic file (type png)
 
 <use figuras/figura005.png>
-Package pdftex.def Info: figuras/figura005.png used on input line 82.
-(pdftex.def)             Requested size: 432.24861pt x 233.61441pt.
+Package pdftex.def Info: figuras/figura005.png used on input line 72.
+(pdftex.def)             Requested size: 672.59784pt x 389.69234pt.
 ) (./editaveis/resultados.tex [46] [47pdfTeX warning (ext4): destination with t
 he same identifier (name{figure.4.5}) has been already used, duplicate ignored
 
@@ -1702,8 +1702,13 @@ uplicate ignored
 l.1 \part
          {Resultados} <./figuras/figura005.png>] [49
 
-] [50])
-(./editaveis/conclusao.tex [51
+] [50]
+Overfull \hbox (15.74893pt too wide) in paragraph at lines 21--22
+[]\T1/lmr/m/n/12 Os sis-tema está dis-po-ní-vel no GitHub no en-de-reço: [][]$<
+[]https : / / github . com / dragao1995 /
+ []
+
+) (./editaveis/conclusao.tex [51
 
 ] [52
 
@@ -1733,49 +1738,49 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ] [64] [65
 
 ]
-<figuras/prototipo001.png, id=981, 896.59969pt x 234.8775pt>
+<figuras/prototipo001.png, id=965, 896.59969pt x 234.8775pt>
 File: figuras/prototipo001.png Graphic file (type png)
 
 <use figuras/prototipo001.png>
 Package pdftex.def Info: figuras/prototipo001.png used on input line 93.
 (pdftex.def)             Requested size: 432.24861pt x 113.23091pt.
 
-<figuras/prototipoA001.png, id=982, 878.53218pt x 525.46312pt>
+<figuras/prototipoA001.png, id=966, 878.53218pt x 525.46312pt>
 File: figuras/prototipoA001.png Graphic file (type png)
 
 <use figuras/prototipoA001.png>
 Package pdftex.def Info: figuras/prototipoA001.png used on input line 100.
 (pdftex.def)             Requested size: 432.24861pt x 258.53754pt.
 
-<figuras/prototipoA002.png, id=983, 880.79062pt x 525.46312pt>
+<figuras/prototipoA002.png, id=967, 880.79062pt x 525.46312pt>
 File: figuras/prototipoA002.png Graphic file (type png)
 
 <use figuras/prototipoA002.png>
 Package pdftex.def Info: figuras/prototipoA002.png used on input line 107.
 (pdftex.def)             Requested size: 432.24861pt x 257.87206pt.
 
-<figuras/prototipo002.png, id=984, 899.61093pt x 494.59781pt>
+<figuras/prototipo002.png, id=968, 899.61093pt x 494.59781pt>
 File: figuras/prototipo002.png Graphic file (type png)
 
 <use figuras/prototipo002.png>
 Package pdftex.def Info: figuras/prototipo002.png used on input line 114.
 (pdftex.def)             Requested size: 432.24861pt x 237.64574pt.
 
-<figuras/prototipo003.png, id=985, 909.3975pt x 673.01437pt>
+<figuras/prototipo003.png, id=969, 909.3975pt x 673.01437pt>
 File: figuras/prototipo003.png Graphic file (type png)
 
 <use figuras/prototipo003.png>
 Package pdftex.def Info: figuras/prototipo003.png used on input line 121.
 (pdftex.def)             Requested size: 432.24861pt x 319.89053pt.
 
-<figuras/prototipo004.png, id=986, 464.4853pt x 171.64125pt>
+<figuras/prototipo004.png, id=970, 464.4853pt x 171.64125pt>
 File: figuras/prototipo004.png Graphic file (type png)
 
 <use figuras/prototipo004.png>
 Package pdftex.def Info: figuras/prototipo004.png used on input line 128.
 (pdftex.def)             Requested size: 432.24861pt x 159.73207pt.
 
-<figuras/prototipo005.png, id=987, 459.21562pt x 183.68625pt>
+<figuras/prototipo005.png, id=971, 459.21562pt x 183.68625pt>
 File: figuras/prototipo005.png Graphic file (type png)
 
 <use figuras/prototipo005.png>
@@ -1846,21 +1851,21 @@ a con-fir-mar [[][]RN003[][][]] [[][]PROT008[][][]].
 
 [71
 
-] <figuras/prototipo006.png, id=1061, 892.83563pt x 619.56468pt>
+] <figuras/prototipo006.png, id=1046, 892.83563pt x 619.56468pt>
 File: figuras/prototipo006.png Graphic file (type png)
 
 <use figuras/prototipo006.png>
 Package pdftex.def Info: figuras/prototipo006.png used on input line 187.
 (pdftex.def)             Requested size: 432.24861pt x 299.94963pt.
 
-<figuras/prototipo007.png, id=1062, 931.22906pt x 816.04875pt>
+<figuras/prototipo007.png, id=1047, 931.22906pt x 816.04875pt>
 File: figuras/prototipo007.png Graphic file (type png)
 
 <use figuras/prototipo007.png>
 Package pdftex.def Info: figuras/prototipo007.png used on input line 194.
 (pdftex.def)             Requested size: 432.24861pt x 378.78635pt.
 
-<figuras/prototipo008.png, id=1063, 467.49657pt x 170.88844pt>
+<figuras/prototipo008.png, id=1048, 467.49657pt x 170.88844pt>
 File: figuras/prototipo008.png Graphic file (type png)
 
 <use figuras/prototipo008.png>
@@ -1893,7 +1898,7 @@ Overfull \hbox (39.29916pt too wide) in paragraph at lines 223--224
 om a res-posta. [[][]RN002[][][]] [[][]PROT010[][][]]. 
  []
 
-<figuras/prototipo009.png, id=1088, 860.46469pt x 612.78937pt>
+<figuras/prototipo009.png, id=1073, 860.46469pt x 612.78937pt>
 File: figuras/prototipo009.png Graphic file (type png)
 
 <use figuras/prototipo009.png>
@@ -1902,7 +1907,7 @@ Package pdftex.def Info: figuras/prototipo009.png used on input line 242.
  [75
 
 ]
-<figuras/prototipo010.png, id=1106, 459.96844pt x 202.50656pt>
+<figuras/prototipo010.png, id=1091, 459.96844pt x 202.50656pt>
 File: figuras/prototipo010.png Graphic file (type png)
 
 <use figuras/prototipo010.png>
@@ -1941,7 +1946,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: A5CF60165E7AFE98700FBDF9811BE885;5778.
+(rerunfilecheck)             Checksum: D8D7A49AD17642DADD8A0653C34C0729;5634.
 
 
 LaTeX Warning: There were undefined references.
@@ -1952,10 +1957,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 24256 strings out of 493069
- 428717 string characters out of 6138221
- 532862 words of memory out of 5000000
- 26886 multiletter control sequences out of 15000+600000
+ 24246 strings out of 493069
+ 428538 string characters out of 6138221
+ 532316 words of memory out of 5000000
+ 26877 multiletter control sequences out of 15000+600000
  97774 words of font info for 61 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  70i,13n,56p,590b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1977,10 +1982,10 @@ nts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/lm/lmsso10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsso12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (78 pages, 1651957 bytes).
+Output written on main.pdf (78 pages, 1628650 bytes).
 PDF statistics:
- 1427 PDF objects out of 1440 (max. 8388607)
- 1275 compressed objects within 13 object streams
- 319 named destinations out of 1000 (max. 500000)
+ 1411 PDF objects out of 1440 (max. 8388607)
+ 1261 compressed objects within 13 object streams
+ 318 named destinations out of 1000 (max. 500000)
  608 words of extra memory for PDF output out of 10000 (max. 10000000)
 
