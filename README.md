@@ -53,9 +53,6 @@ Sistema para ajudar a melhoria da comunicação entre as Instituições sobre as
         IX.Depois basta da um gulp no projeto e rodar a aplicação que tudo estará ok
 
 
-* Informação sobre o tutorial para montar o ambiente
-https://docs.google.com/document/d/1WfeikMglaJeuV0WZhZrcqDtL_OcRsNo0MyeyiZRy31k/edit?usp=sharing
-
 
 * URL do overleaf - DOCS TCC
 https://v2.overleaf.com/6674951497mkxbphrzwncg

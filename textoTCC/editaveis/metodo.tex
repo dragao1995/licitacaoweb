@@ -42,7 +42,7 @@ Com base nesses tópicos continuamos o levantamento de requisitos e montamos sol
 
 \section{Implementação do sistema}
 
-Desenvolvemos o sistemausando um \textit{framework} chamado JHipster que gera o esqueleto da aplicação, deixando pronta todo um \textit{front-end} básico, o \textit{back-end}, a comunicação entre entre eles e a integração com o banco de dados.
+Desenvolvemos o sistema usando um \textit{framework} chamado JHipster na versão 4.13.2 que gera o esqueleto da aplicação, deixando pronta todo um \textit{front-end} básico, o \textit{back-end}, a comunicação entre entre eles e a integração com o banco de dados.
 
 %E com isso conseguimos agilizar o processo desenvolvimento da aplicação web pois o ambiente de desenvolvimento foi montado de forma rápida e 
 
@@ -51,8 +51,8 @@ Estes dados são então salvos no nosso banco de dados.
 
 A implementação da aplicação foi baseada em uma \textit{stack} (pilha) de programas.
 Para o desenvolvimento da estrutura lógica do sistema e integração com o banco de dados utilizamos JPA e o Hibernate.
-Utilizamos \textit{Spring boot} para auxiliar no desenvolvimento criando uma API com arquitetura REST para a comunicação com o front-end.
-Os dados foram persistidos no SGBD MySQL conforme o modelo de dados mostrado na~\ref{Figura007}.
+Utilizamos \textit{Spring boot} na versão 2.0 para auxiliar no desenvolvimento criando uma API com arquitetura REST para a comunicação com o front-end.
+Os dados foram persistidos no SGBD MySQL na versão 5.7 conforme o modelo de dados mostrado na~\ref{Figura007}.
 
 \begin{sidewaysfigure}[ht]
 	\includegraphics[width=0.95\textwidth]{figuras/bdAtualizado.png}
@@ -70,7 +70,7 @@ Os dados foram persistidos no SGBD MySQL conforme o modelo de dados mostrado na~
 %\end{figure}
 
 Como o sistema é Web, o front-end foi criado utilizando  HTML e CSS, auxiliados por \textit{scripts} JavaScript para dar dinamismo na forma de apresentação de dados.
-O AngularJS auxiliou no desenvolvimento estabelecendo a comunicação entre o \textit{front-end} e o \textit{back-end}, além da criação das rotas do sistema.
+O AngularJS na versão 1.x auxiliou no desenvolvimento estabelecendo a comunicação entre o \textit{front-end} e o \textit{back-end}, além da criação das rotas do sistema.
 Na estilização da tela usamos componentes \textit{on demand} do \textit{framework} O Bootstrap.
 
 A arquitetura do nosso sistema é apresentada da~\prototipo{Figura005}.
@@ -80,7 +80,7 @@ O \textit{front-end} depende do \textit{back-end} apenas para os dados, mantendo
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.95\textwidth]{figuras/figura005.png}
-    \caption{Arquitetura do projeto~\cite{arquitetura}.}
+    \caption{Arquitetura do projeto.}
     \label{Figura005}
 \end{figure}
 
