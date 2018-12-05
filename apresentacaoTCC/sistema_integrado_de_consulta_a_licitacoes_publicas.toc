@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Conceitos Básicos de Biologia Molecular}{3}{0}{1}
+\beamer@sectionintoc {2}{Comparação de sequências}{10}{0}{2}
+\beamer@sectionintoc {3}{Dados de sequenciamento de alto desempenho}{29}{0}{3}
+\beamer@sectionintoc {4}{Filtragem e montagem de fragmentos}{40}{0}{4}
