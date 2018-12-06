@@ -1,4 +1,7 @@
-\beamer@sectionintoc {1}{Conceitos Básicos de Biologia Molecular}{3}{0}{1}
-\beamer@sectionintoc {2}{Comparação de sequências}{10}{0}{2}
-\beamer@sectionintoc {3}{Dados de sequenciamento de alto desempenho}{29}{0}{3}
-\beamer@sectionintoc {4}{Filtragem e montagem de fragmentos}{40}{0}{4}
+\beamer@sectionintoc {1}{Processo Licitatório}{3}{0}{1}
+\beamer@sectionintoc {2}{Fase Interna do Processo Licitatório}{11}{0}{2}
+\beamer@sectionintoc {3}{Análise e Desenvolvimento de Sistemas}{15}{0}{3}
+\beamer@sectionintoc {4}{Método}{35}{0}{4}
+\beamer@sectionintoc {5}{Resultado}{40}{0}{5}
+\beamer@sectionintoc {6}{Conclusão}{42}{0}{6}
+\beamer@sectionintoc {7}{Obrigado}{44}{0}{7}
