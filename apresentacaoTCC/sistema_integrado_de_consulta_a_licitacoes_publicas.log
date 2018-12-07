@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6880 64-bit) (preloaded format=xelatex 2018.12.4)  6 DEC 2018 03:17
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6880 64-bit) (preloaded format=xelatex 2018.12.4)  6 DEC 2018 23:46
 entering extended mode
 **./sistema_integrado_de_consulta_a_licitacoes_publicas.tex
 (sistema_integrado_de_consulta_a_licitacoes_publicas.tex
@@ -1483,39 +1483,45 @@ Overfull \vbox (5.0pt too high) detected at line 66
 
 ] [7
 
-] [8
-
-] [9
-
-] [10
-
 ]
-Overfull \hbox (56.90549pt too wide) in paragraph at lines 128--128
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 114--114
 [][][]  
  []
 
 
-Overfull \vbox (5.0pt too high) detected at line 128
+Overfull \vbox (5.0pt too high) detected at line 114
  []
 
-[11
+[8
 
-] [12
+] [9
+
+]
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 132--132
+[][][]  
+ []
+
+
+Overfull \vbox (5.0pt too high) detected at line 132
+ []
+
+[10
+
+] [11
+
+]
+File: img/front-back.jpg Graphic file (type bmp)
+<img/front-back.jpg>
+ [12
 
 ] [13
 
 ] [14
 
 ]
-Overfull \hbox (56.90549pt too wide) in paragraph at lines 146--146
-[][][]  
- []
-
-
-Overfull \vbox (5.0pt too high) detected at line 146
- []
-
-[15
+File: img/rest_api.png Graphic file (type bmp)
+<img/rest_api.png>
+ [15
 
 ] [16
 
@@ -1525,22 +1531,17 @@ Overfull \vbox (5.0pt too high) detected at line 146
 
 ] [19
 
-]
-File: img/front-back.jpg Graphic file (type bmp)
-<img/front-back.jpg>
- [20
+] [20
+
+] [21
 
 ]
-File: img/frameworks.png Graphic file (type bmp)
-<img/frameworks.png>
- [21
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 241--241
+[][][]  
+ []
 
-]
-File: img/rest.png Graphic file (type bmp)
-<img/rest.png>
 
-Overfull \hbox (7.71255pt too wide) in paragraph at lines 195--195
- [] 
+Overfull \vbox (5.0pt too high) detected at line 241
  []
 
 [22
@@ -1550,86 +1551,48 @@ Overfull \hbox (7.71255pt too wide) in paragraph at lines 195--195
 ] [24
 
 ]
-File: img/rest_api.png Graphic file (type bmp)
-<img/rest_api.png>
+File: img/arquitetura.png Graphic file (type bmp)
+<img/arquitetura.png>
  [25
 
 ] [26
 
-] [27
+]
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 268--268
+[][][]  
+ []
+
+
+Overfull \vbox (5.0pt too high) detected at line 268
+ []
+
+[27
 
 ] [28
 
-] [29
+]
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 277--277
+[][][]  
+ []
+
+
+Overfull \vbox (5.0pt too high) detected at line 277
+ []
+
+[29
 
 ] [30
 
-] [31
-
-] [32
-
-] [33
-
-] [34
-
 ]
-Overfull \hbox (56.90549pt too wide) in paragraph at lines 278--278
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 283--283
 [][][]  
  []
 
 
-Overfull \vbox (5.0pt too high) detected at line 278
+Overfull \vbox (5.0pt too high) detected at line 283
  []
 
-[35
-
-] [36
-
-] [37
-
-]
-File: img/arquitetura.png Graphic file (type bmp)
-<img/arquitetura.png>
- [38
-
-] [39
-
-]
-Overfull \hbox (56.90549pt too wide) in paragraph at lines 305--305
-[][][]  
- []
-
-
-Overfull \vbox (5.0pt too high) detected at line 305
- []
-
-[40
-
-] [41
-
-]
-Overfull \hbox (56.90549pt too wide) in paragraph at lines 313--313
-[][][]  
- []
-
-
-Overfull \vbox (5.0pt too high) detected at line 313
- []
-
-[42
-
-] [43
-
-]
-Overfull \hbox (56.90549pt too wide) in paragraph at lines 319--319
-[][][]  
- []
-
-
-Overfull \vbox (5.0pt too high) detected at line 319
- []
-
-[44
+[31
 
 ]
 \tf@nav=\write6
@@ -1641,23 +1604,23 @@ Overfull \vbox (5.0pt too high) detected at line 319
 \tf@snm=\write8
 \openout8 = `sistema_integrado_de_consulta_a_licitacoes_publicas.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 285.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 285.
  (sistema_integrado_de_consulta_a_licitacoes_publicas.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 285.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 285.
 Package rerunfilecheck Info: File `sistema_integrado_de_consulta_a_licitacoes_p
 ublicas.out' has not changed.
 (rerunfilecheck)             Checksum: 73804759BD2651EF7EE293BE18311900.
  ) 
 Here is how much of TeX's memory you used:
- 35116 strings out of 427771
- 694366 string characters out of 3147369
- 774343 words of memory out of 3000000
- 38638 multiletter control sequences out of 15000+200000
+ 35082 strings out of 427771
+ 694005 string characters out of 3147369
+ 777064 words of memory out of 3000000
+ 38606 multiletter control sequences out of 15000+200000
  535724 words of font info for 58 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  60i,12n,79p,820b,832s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on sistema_integrado_de_consulta_a_licitacoes_publicas.pdf (44 p
+Output written on sistema_integrado_de_consulta_a_licitacoes_publicas.pdf (31 p
 ages).

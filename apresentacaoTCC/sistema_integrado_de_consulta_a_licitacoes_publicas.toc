@@ -1,7 +1,7 @@
 \beamer@sectionintoc {1}{Processo Licitatório}{3}{0}{1}
-\beamer@sectionintoc {2}{Fase Interna do Processo Licitatório}{11}{0}{2}
-\beamer@sectionintoc {3}{Análise e Desenvolvimento de Sistemas}{15}{0}{3}
-\beamer@sectionintoc {4}{Método}{35}{0}{4}
-\beamer@sectionintoc {5}{Resultado}{40}{0}{5}
-\beamer@sectionintoc {6}{Conclusão}{42}{0}{6}
-\beamer@sectionintoc {7}{Obrigado}{44}{0}{7}
+\beamer@sectionintoc {2}{Fase Interna do Processo Licitatório}{8}{0}{2}
+\beamer@sectionintoc {3}{Análise e Desenvolvimento de Sistemas}{10}{0}{3}
+\beamer@sectionintoc {4}{Método}{22}{0}{4}
+\beamer@sectionintoc {5}{Resultado}{27}{0}{5}
+\beamer@sectionintoc {6}{Conclusão}{29}{0}{6}
+\beamer@sectionintoc {7}{Obrigado}{31}{0}{7}
