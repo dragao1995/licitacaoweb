@@ -1,3 +1,4 @@
+\beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{Processo Licitatório}{3}{0}{1}
 \beamer@sectionintoc {2}{Fase Interna do Processo Licitatório}{8}{0}{2}
 \beamer@sectionintoc {3}{Problema}{10}{0}{3}
