@@ -3,7 +3,7 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.6 }
+\abntbstabout{v-1.9.7 }
 
 \bibitem[Abreu 2016]{abreu2016desenvolvimento}
 \abntrefinfo{Abreu}{ABREU}{2016}
@@ -217,6 +217,13 @@ v.~12, 2016.}
 Online; acessado em 19 de novembro de 2018.
 Dispon{\'\i}vel em:
   \url{https://research.hackerrank.com/developer-skills/2018/}.}
+
+\bibitem[IFG 2016]{apresentacao}
+\abntrefinfo{IFG}{IFG}{2016}
+{IFG. O ifg.
+2016.
+Online; acessado em 17 de novembro de 2018.
+Dispon{\'\i}vel em: \url{https://www.ifg.edu.br/apresentacao-a-instituicao}.}
 
 \bibitem[Junior e Campos 2008]{azevedo2008definiccao}
 \abntrefinfo{Junior e Campos}{JUNIOR; CAMPOS}{2008}
