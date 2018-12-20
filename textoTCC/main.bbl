@@ -59,39 +59,51 @@ Universidade Tecnol{\'o}gica Federal do Paran{\'a}, 2015.}
 
 \bibitem[Brasil 1986]{l2300}
 \abntrefinfo{Brasil}{BRASIL}{1986}
-{BRASIL. \emph{Decreto-Lei Nº 2.300}. 1986.
-  \url{http://www.planalto.gov.br/ccivil_03/decreto-lei/Del2300-86.htm}.
-Online; acessado em 15 de fevereiro de 2017.}
+{BRASIL. Decreto-lei nº 2.300.
+1986.
+Online; acessado em 15 de fevereiro de 2017.
+Dispon{\'\i}vel em:
+  \url{http://www.planalto.gov.br/ccivil\_03/decreto-lei/Del2300-86.htm}.}
 
 \bibitem[Brasil 1988]{l1988}
 \abntrefinfo{Brasil}{BRASIL}{1988}
-{BRASIL. \emph{Constituição 1988}. 1988.
-  \url{http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm}.
-Online; acessado em 15 de fevereiro de 2017.}
+{BRASIL. Constituição 1988.
+1988.
+Online; acessado em 15 de fevereiro de 2017.
+Dispon{\'\i}vel em:
+  \url{http://www.planalto.gov.br/ccivil\_03/constituicao/constituicao.htm}.}
 
 \bibitem[Brasil 1993]{l8666}
 \abntrefinfo{Brasil}{BRASIL}{1993}
-{BRASIL. \emph{Lei Nº 8.666}. 1993.
-  \url{http://www.planalto.gov.br/ccivil_03/leis/L8666cons.htm}.
-Online; acessado em 15 de fevereiro de 2017.}
+{BRASIL. Lei nº 8.666.
+1993.
+Online; acessado em 15 de fevereiro de 2017.
+Dispon{\'\i}vel em:
+  \url{http://www.planalto.gov.br/ccivil\_03/leis/L8666cons.htm}.}
 
 \bibitem[Brasil 2000]{l3555}
 \abntrefinfo{Brasil}{BRASIL}{2000}
-{BRASIL. \emph{Decreto Nº 3.555}. 2000.
-  \url{http://www.planalto.gov.br/ccivil_03/decreto/d3555.htm}.
-Online; acessado em 15 de fevereiro de 2017.}
+{BRASIL. Decreto nº 3.555.
+2000.
+Online; acessado em 15 de fevereiro de 2017.
+Dispon{\'\i}vel em:
+  \url{http://www.planalto.gov.br/ccivil\_03/decreto/d3555.htm}.}
 
 \bibitem[Brasil 2002]{l10529}
 \abntrefinfo{Brasil}{BRASIL}{2002}
-{BRASIL. \emph{Lei Nº 10.520}. 2002.
-  \url{http://www.planalto.gov.br/ccivil_03/LEIS/2002/L10520.htm}.
-Online; acessado em 15 de fevereiro de 2017.}
+{BRASIL. Lei nº 10.520.
+2002.
+Online; acessado em 15 de fevereiro de 2017.
+Dispon{\'\i}vel em:
+  \url{http://www.planalto.gov.br/ccivil\_03/LEIS/2002/L10520.htm}.}
 
 \bibitem[Brasil 2005]{l5450}
 \abntrefinfo{Brasil}{BRASIL}{2005}
-{BRASIL. \emph{Decreto Nº 5.450}. 2005.
-  \url{http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5450.htm}.
-Online; acessado em 15 de fevereiro de 2017.}
+{BRASIL. Decreto nº 5.450.
+2005.
+Online; acessado em 15 de fevereiro de 2017.
+Dispon{\'\i}vel em:
+  \url{http://www.planalto.gov.br/ccivil\_03/\_ato2004-2006/2005/decreto/d5450.htm}.}
 
 \bibitem[Brazao 2014]{brazao2013}
 \abntrefinfo{Brazao}{BRAZAO}{2014}
@@ -218,6 +230,11 @@ Online; acessado em 19 de novembro de 2018.
 Dispon{\'\i}vel em:
   \url{https://research.hackerrank.com/developer-skills/2018/}.}
 
+\bibitem[Howe 2002]{howe2002foldoc}
+\abntrefinfo{Howe}{HOWE}{2002}
+{HOWE, D. Foldoc: Free on-line dictionary of computing.
+London Univ., 2002.}
+
 \bibitem[IFG 2016]{apresentacao}
 \abntrefinfo{IFG}{IFG}{2016}
 {IFG. O ifg.
@@ -341,6 +358,10 @@ Florian{\'o}polis, SC, 2017.}
 \abntrefinfo{PRESTES e BATISTA}{PRESTES; BATISTA}{2004}
 {PRESTES, C.; BATISTA, H.~G. Guia valor econ{\^o}mico de licita{\c{c}}{\~o}es.
 \emph{S{\~a}o Paulo: Globo}, 2004.}
+
+\bibitem[Raible 2016]{raible2016jhipster}
+\abntrefinfo{Raible}{RAIBLE}{2016}
+{RAIBLE, M. \emph{The JHipster mini-book}. [S.l.]: Lulu. com, 2016.}
 
 \bibitem[Ribeiro 2007]{ribeiro2007evoluccao}
 \abntrefinfo{Ribeiro}{RIBEIRO}{2007}
