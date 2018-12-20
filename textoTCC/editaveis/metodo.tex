@@ -14,7 +14,7 @@ Em seguida, documentamos essas soluções através dos casos de uso e iniciamos 
 
 \section{Levantamento de Requisitos}
 
-Através do levantamento de requisitos deterinamos o problema.
+Através do levantamento de requisitos determinamos o problema.
 Essa identificação foi feita através de reuniões com o setor de compras do IFG câmpus Formosa, em que resumimos os seguintes tópicos:
 
 \begin{itemize}
@@ -28,9 +28,9 @@ Com esses pontos notamos que o maior problema da fase interna era a comunicaçã
 Com base nesses tópicos continuamos o levantamento de requisitos e montamos soluções hipotéticas usando casos de uso, que depois foram validados com o cliente.
 
 \begin{itemize}
-    \item O caso de uso~\ref{CASO001} mantém os dados sobre  materiais, serviços, items e licitações atualizados.
+    \item O caso de uso~\ref{CASO001} mantém os dados sobre  materiais, serviços, itens e licitações atualizados.
     
-    \item O caso de uso~\ref{CASO002} permite ao usuário solicitar a inclusão de items e suas quantidades em uma licitação.
+    \item O caso de uso~\ref{CASO002} permite ao usuário solicitar a inclusão de itens e suas quantidades em uma licitação.
 
     \item O caso de uso~\ref{CASO003} permite que o usuário avalie o pedido de participação na licitação.
     
@@ -46,7 +46,7 @@ Desenvolvemos o sistema usando um \textit{framework} chamado JHipster na versão
 
 %E com isso conseguimos agilizar o processo desenvolvimento da aplicação web pois o ambiente de desenvolvimento foi montado de forma rápida e 
 
-Utilizamos a API de compras governamentais para buscar as informações necessárias sobre items, materiais, serviços e licitação.
+Utilizamos a API de compras governamentais para buscar as informações necessárias sobre itens, materiais, serviços e licitação.
 Estes dados são então salvos no nosso banco de dados.
 
 A implementação da aplicação foi baseada em uma \textit{stack} (pilha) de programas.
@@ -65,7 +65,7 @@ Na estilização da tela usamos componentes \textit{on demand} do \textit{framew
 
 A arquitetura do nosso sistema é apresentada da~\prototipo{Figura005}.
 O \textit{front-end} realiza chamadas de método para o \textit{back-end}, o qual as processa, se for o caso busca os dados no banco de dados, e retorna-os para o front-end.
-O \textit{front-end} depende do \textit{back-end} apenas para os dados, mantendo-se visível ao usuário, idependente da ação.
+O \textit{front-end} depende do \textit{back-end} apenas para os dados, mantendo-se visível ao usuário, independente da ação.
 
 \begin{sidewaysfigure}[ht]
     \centering
@@ -77,4 +77,4 @@ O \textit{front-end} depende do \textit{back-end} apenas para os dados, mantendo
 \section{Implantação do Sistema}
 
 A implantação do sistema ainda não ocorreu.
-A implanatação é agora dependente do cliente, o qual deverá proporcionar aos desenvolvedores uma agenda para a avalidação das soluções implementadas.
+A implantação é agora dependente do cliente, o qual deverá proporcionar aos desenvolvedores uma agenda para a a validação das soluções implementadas.
