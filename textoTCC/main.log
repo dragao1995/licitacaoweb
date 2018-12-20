@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.11)  20 DEC 2018 11:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.11)  20 DEC 2018 17:54
 entering extended mode
 **./main.tex
 (main.tex
@@ -1500,39 +1500,51 @@ File: figuras/bdAtualizado.png Graphic file (type png)
 <use figuras/bdAtualizado.png>
 Package pdftex.def Info: figuras/bdAtualizado.png  used on input line 57.
 (pdftex.def)             Requested size: 672.59784pt x 376.84085pt.
-<figuras/figura005.png, id=728, 954.56625pt x 553.06625pt>
+ [44] [45pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.4.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.62 \begin{landscape}
+                       <./figuras/bdAtualizado.png>]
+
+LaTeX Warning: Float too large for page by 37.09929pt on input line 102.
+
+[46]
+
+LaTeX Warning: Float too large for page by 7.29933pt on input line 143.
+
+[47]
+<figuras/figura005.png, id=746, 954.56625pt x 553.06625pt>
 File: figuras/figura005.png Graphic file (type png)
 <use figuras/figura005.png>
-Package pdftex.def Info: figuras/figura005.png  used on input line 72.
+Package pdftex.def Info: figuras/figura005.png  used on input line 156.
 (pdftex.def)             Requested size: 672.59784pt x 389.69234pt.
-) (editaveis/resultados.tex
-[44] [45pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.4.5}) has been already used, duplicate ignored
+) (editaveis/resultados.tex [48
+
+
+
+
+] [49pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \part
-         {Resultados} <./figuras/bdAtualizado.png>] [46pdfTeX warning (ext4): d
-estination with the same identifier (name{figure.4.6}) has been already used, d
-uplicate ignored
+         {Resultados} <./figuras/figura005.png>] [50
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \part
-         {Resultados} <./figuras/figura005.png>] [47
-
-] [48]
+] [51] [52]
 Overfull \hbox (15.74893pt too wide) in paragraph at lines 21--22
 []\T1/lmr/m/n/12 Os sis-tema está dis-po-ní-vel no GitHub no en-de-reço: [][]$<
 []https : / / github . com / dragao1995 /
  []
 
-<figuras/prototipo001.png, id=754, 896.59969pt x 234.8775pt>
+<figuras/prototipo001.png, id=770, 896.59969pt x 234.8775pt>
 File: figuras/prototipo001.png Graphic file (type png)
 <use figuras/prototipo001.png>
 Package pdftex.def Info: figuras/prototipo001.png  used on input line 25.
 (pdftex.def)             Requested size: 432.24861pt x 113.23091pt.
-) (editaveis/conclusao.tex [49
+) (editaveis/conclusao.tex [53
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7}) 
 has been already used, duplicate ignored
@@ -1541,65 +1553,65 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.1 \chapter
             [ConclusÃ£o]{ConclusÃ£o}\label{Capitulo6} <./figuras/prototipo001.p
-ng>] [50
+ng>] [54
 
 ]) (main.bbl (main.brf)
 \tf@brf=\write6
 \openout6 = `main.brf'.
 
- [51] [52
+ [55] [56
 
 ]
 bibitemlist
-[53] [54] [55] [56]) (editaveis/anexos.tex [57] [58
+[57] [58] [59] [60]) (editaveis/anexos.tex [61] [62
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[59
+[63
 
-] [60] [61
+] [64] [65
 
-] [62] [63
+] [66] [67
 
 ]
 File: figuras/prototipo001.png Graphic file (type png)
 <use figuras/prototipo001.png>
 Package pdftex.def Info: figuras/prototipo001.png  used on input line 93.
 (pdftex.def)             Requested size: 432.24861pt x 113.23091pt.
-<figuras/prototipoA001.png, id=986, 878.53218pt x 525.46312pt>
+<figuras/prototipoA001.png, id=1003, 878.53218pt x 525.46312pt>
 File: figuras/prototipoA001.png Graphic file (type png)
 <use figuras/prototipoA001.png>
 Package pdftex.def Info: figuras/prototipoA001.png  used on input line 100.
 (pdftex.def)             Requested size: 432.24861pt x 258.53754pt.
-<figuras/prototipoA002.png, id=987, 880.79062pt x 525.46312pt>
+<figuras/prototipoA002.png, id=1004, 880.79062pt x 525.46312pt>
 File: figuras/prototipoA002.png Graphic file (type png)
 <use figuras/prototipoA002.png>
 Package pdftex.def Info: figuras/prototipoA002.png  used on input line 107.
 (pdftex.def)             Requested size: 432.24861pt x 257.87206pt.
-<figuras/prototipo002.png, id=988, 899.61093pt x 494.59781pt>
+<figuras/prototipo002.png, id=1005, 899.61093pt x 494.59781pt>
 File: figuras/prototipo002.png Graphic file (type png)
 <use figuras/prototipo002.png>
 Package pdftex.def Info: figuras/prototipo002.png  used on input line 114.
 (pdftex.def)             Requested size: 432.24861pt x 237.64574pt.
-<figuras/prototipo003.png, id=989, 909.3975pt x 673.01437pt>
+<figuras/prototipo003.png, id=1006, 909.3975pt x 673.01437pt>
 File: figuras/prototipo003.png Graphic file (type png)
 <use figuras/prototipo003.png>
 Package pdftex.def Info: figuras/prototipo003.png  used on input line 121.
 (pdftex.def)             Requested size: 432.24861pt x 319.89053pt.
-<figuras/prototipo004.png, id=990, 464.4853pt x 171.64125pt>
+<figuras/prototipo004.png, id=1007, 464.4853pt x 171.64125pt>
 File: figuras/prototipo004.png Graphic file (type png)
 <use figuras/prototipo004.png>
 Package pdftex.def Info: figuras/prototipo004.png  used on input line 128.
 (pdftex.def)             Requested size: 432.24861pt x 159.73207pt.
-<figuras/prototipo005.png, id=991, 459.21562pt x 183.68625pt>
+<figuras/prototipo005.png, id=1008, 459.21562pt x 183.68625pt>
 File: figuras/prototipo005.png Graphic file (type png)
 <use figuras/prototipo005.png>
 Package pdftex.def Info: figuras/prototipo005.png  used on input line 135.
 (pdftex.def)             Requested size: 432.24861pt x 172.90892pt.
- [64] [65pdfTeX warning (ext4): destination with the same identifier (name{figu
+ [68] [69pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.anexochapback.2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1613,7 +1625,7 @@ ed, duplicate ignored
                                                   \fi \fi 
 l.140 \chapter
               {Caso de uso 003}\label{CASO003} <./figuras/prototipoA001.png>]
-[66pdfTeX warning (ext4): destination with the same identifier (name{figure.ane
+[70pdfTeX warning (ext4): destination with the same identifier (name{figure.ane
 xochapback.2.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1627,7 +1639,7 @@ sed, duplicate ignored
                                                   \fi \fi 
 l.140 \chapter
               {Caso de uso 003}\label{CASO003} <./figuras/prototipoA002.png> <.
-/figuras/prototipo002.png>] [67pdfTeX warning (ext4): destination with the same
+/figuras/prototipo002.png>] [71pdfTeX warning (ext4): destination with the same
  identifier (name{figure.anexochapback.2.12}) has been already used, duplicate 
 ignored
 
@@ -1642,7 +1654,7 @@ sed, duplicate ignored
                                                   \fi \fi 
 l.140 \chapter
               {Caso de uso 003}\label{CASO003} <./figuras/prototipo003.png> <./
-figuras/prototipo004.png>] [68pdfTeX warning (ext4): destination with the same 
+figuras/prototipo004.png>] [72pdfTeX warning (ext4): destination with the same 
 identifier (name{figure.anexochapback.2.14}) has been already used, duplicate i
 gnored
 
@@ -1661,32 +1673,32 @@ Overfull \hbox (21.39531pt too wide) in paragraph at lines 158--159
 a con-fir-mar [[][]RN003[][][]] [[][]PROT008:
  []
 
-[69
+[73
 
 ]
-<figuras/prototipo006.png, id=1069, 892.83563pt x 619.56468pt>
+<figuras/prototipo006.png, id=1086, 892.83563pt x 619.56468pt>
 File: figuras/prototipo006.png Graphic file (type png)
 <use figuras/prototipo006.png>
 Package pdftex.def Info: figuras/prototipo006.png  used on input line 187.
 (pdftex.def)             Requested size: 432.24861pt x 299.94963pt.
-<figuras/prototipo007.png, id=1070, 931.22906pt x 816.04875pt>
+<figuras/prototipo007.png, id=1087, 931.22906pt x 816.04875pt>
 File: figuras/prototipo007.png Graphic file (type png)
 <use figuras/prototipo007.png>
 Package pdftex.def Info: figuras/prototipo007.png  used on input line 194.
 (pdftex.def)             Requested size: 432.24861pt x 378.78635pt.
-<figuras/prototipo008.png, id=1071, 467.49657pt x 170.88844pt>
+<figuras/prototipo008.png, id=1088, 467.49657pt x 170.88844pt>
 File: figuras/prototipo008.png Graphic file (type png)
 <use figuras/prototipo008.png>
 Package pdftex.def Info: figuras/prototipo008.png  used on input line 201.
 (pdftex.def)             Requested size: 432.24861pt x 158.01195pt.
- [70] [71pdfTeX warning (ext4): destination with the same identifier (name{figu
+ [74] [75pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.anexochapback.3.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.206 \chapter
               {Caso de uso 004}\label{CASO004} <./figuras/prototipo006.png>]
-[72pdfTeX warning (ext4): destination with the same identifier (name{figure.ane
+[76pdfTeX warning (ext4): destination with the same identifier (name{figure.ane
 xochapback.3.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1706,15 +1718,15 @@ Overfull \hbox (36.03517pt too wide) in paragraph at lines 223--224
 om a res-posta. [[][]RN002[][][]] [[][]PROT010:
  []
 
-<figuras/prototipo009.png, id=1096, 860.46469pt x 612.78937pt>
+<figuras/prototipo009.png, id=1112, 860.46469pt x 612.78937pt>
 File: figuras/prototipo009.png Graphic file (type png)
 <use figuras/prototipo009.png>
 Package pdftex.def Info: figuras/prototipo009.png  used on input line 242.
 (pdftex.def)             Requested size: 432.24861pt x 307.8339pt.
-[73
+[77
 
 ]
-<figuras/prototipo010.png, id=1115, 459.96844pt x 202.50656pt>
+<figuras/prototipo010.png, id=1132, 459.96844pt x 202.50656pt>
 File: figuras/prototipo010.png Graphic file (type png)
 <use figuras/prototipo010.png>
 Package pdftex.def Info: figuras/prototipo010.png  used on input line 249.
@@ -1723,7 +1735,7 @@ Package pdftex.def Info: figuras/prototipo010.png  used on input line 249.
 No file main.ind.
 
 AED: lastpage setting LastPage
-[74pdfTeX warning (ext4): destination with the same identifier (name{figure.ane
+[78pdfTeX warning (ext4): destination with the same identifier (name{figure.ane
 xochapback.4.18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1753,10 +1765,10 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 24131 strings out of 492970
- 439972 string characters out of 3123927
- 545772 words of memory out of 3000000
- 27100 multiletter control sequences out of 15000+200000
+ 24136 strings out of 492970
+ 440015 string characters out of 3123927
+ 546681 words of memory out of 3000000
+ 27101 multiletter control sequences out of 15000+200000
  97774 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,13n,80p,597b,669s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1785,9 +1797,9 @@ blic/lm/lmsso10.pfb><C:/Users/Alex Junior/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/lm/lmsso12.pfb><C:/Users/Alex Junior/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Alex Junior/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (76 pages, 1778375 bytes).
+Output written on main.pdf (80 pages, 1786219 bytes).
 PDF statistics:
- 1432 PDF objects out of 1440 (max. 8388607)
- 321 named destinations out of 1000 (max. 500000)
+ 1451 PDF objects out of 1728 (max. 8388607)
+ 325 named destinations out of 1000 (max. 500000)
  704 words of extra memory for PDF output out of 10000 (max. 10000000)
 

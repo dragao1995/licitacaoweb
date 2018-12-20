@@ -59,6 +59,90 @@ Os dados foram persistidos no SGBD MySQL na versão 5.7 conforme o modelo de dad
 	\label{Figura007}
 \end{sidewaysfigure}
 
+\begin{landscape}
+\begin{table}[ht]
+	\centering
+\begin{tabular}{|l|l|l|l|}
+	\hline
+	Nome da Tabela & Nome da Coluna            & Comentário                                                             & Tipo do Dado \\ \hline
+	tb\_licitacao  & id                        & Identificador da tabela.                                               & NUMERIC      \\ \hline
+	tb\_licitacao  & uasg                      & Codigo da Unidades Administrativas de Serviços Gerais.                 & NUMERIC      \\ \hline
+	tb\_licitacao  & modalidade                & Código da modalidade da licitação.                                     & NUMERIC      \\ \hline
+	tb\_licitacao  & funcao\_responsavel       & Função do responsavel da licitação.                                    & VARCHAR      \\ \hline
+	tb\_licitacao  & data\_entrega\_edital     & Data da entrega do edital.                                             & DATE         \\ \hline
+	tb\_licitacao  & numero\_aviso             & Número do Aviso da Licitação por Registro de Preço.                    & NUMERIC      \\ \hline
+	tb\_licitacao  & identificador             & Identificador da licitação associada.                                  & NUMERIC      \\ \hline
+	tb\_licitacao  & situacao\_aviso           & Situação do aviso.                                                     & VARCHAR      \\ \hline
+	tb\_licitacao  & objeto                    & Objeto da Licitação.                                                   & VARCHAR      \\ \hline
+	tb\_licitacao  & informacoes\_gerais       & Informações Gerais.                                                    & VARCHAR      \\ \hline
+	tb\_licitacao  & numero\_processo          & Número do Processo.                                                    & NUMERIC      \\ \hline
+	tb\_licitacao  & tipo\_recurso             & Tipo do Recurso.                                                       & VARCHAR      \\ \hline
+	tb\_licitacao  & numero\_itens             & Número de Itens.                                                       & NUMERIC      \\ \hline
+	tb\_licitacao  & data\_publicacao          & Data da publicação da licitação.                                       & DATE         \\ \hline
+	tb\_licitacao  & data\_entrega\_edital     & Data de Entrega do Edital.                                             & DATE         \\ \hline
+	tb\_licitacao  & nome\_responsavel         & Nome do responsável pela licitação.                                    & VARCHAR      \\ \hline
+	tb\_licitacao  & endereco\_entrega\_edital & Endereço de Entrega do Edital.                                         & VARCHAR      \\ \hline
+	tb\_licitacao  & data\_entrega\_proposta   & Data de entrega da proposta.                                           & DATE         \\ \hline
+	tb\_item       & id                        & Identificador da tabela.                                               & NUMERIC      \\ \hline
+	tb\_item       & licitacao\_id             & Identificador da tabela tb\_licitacao.                                 & NUMERIC      \\ \hline
+	tb\_item       & servico\_id               & Identificador da tabela tb\_servico.                                   & NUMERIC      \\ \hline
+	tb\_item       & material\_id              & Identificador da tabela tb\_material.                                  & NUMERIC      \\ \hline
+	tb\_item       & uasg                      & Codigo da Unidades Administrativas de Serviços Gerais.                 & NUMERIC      \\ \hline
+	tb\_item       & codigo\_item\_material    & Código do Material.                                                    & NUMERIC      \\ \hline
+	tb\_item       & codigo\_item\_servico     & Código do Serviço.                                                     & NUMERIC      \\ \hline
+	tb\_item       & descricao\_item           & Descrição do item.                                                     & VARCHAR      \\ \hline
+	tb\_item       & numero\_licitacao         & Identificador da licitação associada.                                  & NUMERIC      \\ \hline
+	tb\_item       & quantidade                & Quantidade de itens de licitação.                                      & NUMERIC      \\ \hline
+	tb\_item       & unidade                   & Unidade.                                                               & VARCHAR      \\ \hline
+	tb\_material   & id                        & Identificador da tabela.                                               & NUMERIC      \\ \hline
+	tb\_material   & codigo                    & Código do material.                                                    & NUMERIC      \\ \hline
+	tb\_material   & descricao                 & Descrição do material.                                                 & VARCHAR      \\ \hline
+\end{tabular}
+
+\end{table}
+\end{landscape}
+
+\begin{landscape}
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{|l|l|l|l|}
+				\hline
+			Nome da Tabela & Nome da Coluna            & Comentário                                                             & Tipo do Dado \\ \hline
+			tb\_servico    & id                        & Identificador da tabela.                                               & NUMERIC      \\ \hline
+			tb\_servico    & codigo                    & Código do serviço.                                                     & NUMERIC      \\ \hline
+			tb\_servico    & descricao                 & Descrição do serviço.                                                  & VARCHAR      \\ \hline
+			tb\_mensagem   & id                        & Identificador da tabela.                                               & NUMERIC      \\ \hline
+			tb\_mensagem   & uasg\_id                  & Identificador da tabela tb\_uasg.                                      & NUMERIC      \\ \hline
+			tb\_mensagem   & id\_licitacao             & Identificador da tabela tb\_licitacao.                                 & NUMERIC      \\ \hline
+			tb\_mensagem   & servico\_id               & Identificador da tabela tb\_servico.                                   & NUMERIC      \\ \hline
+			tb\_mensagem   & material\_id              & Identificador da tabela tb\_material.                                  & NUMERIC      \\ \hline
+			tb\_mensagem   & protocolo                 & Protocolo gerado pelo sistema para o usuario identificar a requisição. & NUMERIC      \\ \hline
+			tb\_mensagem   & data\_inicio              & Data da criação da requisição.                                         & DATE         \\ \hline
+			tb\_mensagem   & data\_final               & Data da resposta da requisição.                                        & DATE         \\ \hline
+			tb\_mensagem   & quantidade                & Quantidade de itens requisitados.                                      & DECIMAL      \\ \hline
+			tb\_mensagem   & status                    & Status da mensagem.                                                    & VARCHAR      \\ \hline
+			tb\_mensagem   & resposta                  & Resposta da Mensagem.                                                  & VARCHAR      \\ \hline
+			tb\_mensagem   & id\_uasg\_envio           & Identificador da tabela uasg que solicitou a requisição.               & NUMERIC      \\ \hline
+			tb\_mensagem   & id\_uasg\_destino         & Identificador da tabela uasg de destino requisição.                    & NUMERIC      \\ \hline
+			tb\_uasg       & id                        & Identificador da tabela.                                               & NUMERIC      \\ \hline
+			tb\_uasg       & nome                      & Nome da uasg.                                                          & VARCHAR      \\ \hline
+			tb\_uasg       & orgao                     & Orgão que a uasg pertence.                                             & NUMERIC      \\ \hline
+			tb\_uasg       & cep                       & CEP da Uasg                                                            & VARCHAR      \\ \hline
+			tb\_uasg       & ativo                     & situação uasg                                                          & BOOLEAN      \\ \hline
+			jhi\_user      & id                        & Identificador da tabela.                                               & NUMERIC      \\ \hline
+			jhi\_user      & login                     & Login do usuario.                                                      & VARCHAR      \\ \hline
+			jhi\_user      & password\_hash            & Senha do usuario criptografada.                                        & VARCHAR      \\ \hline
+			jhi\_user      & firt\_name                & Primeiro nome do usuario.                                              & VARCHAR      \\ \hline
+			jhi\_user      & last\_name                & Ultimo nome do usuario.                                                & VARCHAR      \\ \hline
+			jhi\_user      & email                     & Email do usuario.                                                      & VARCHAR      \\ \hline
+			jhi\_user      & activated                 & Usuario ativo                                                          & BOOLEAN      \\ \hline
+			jhi\_user      & created\_date             & Data da criação do usuario.                                            & DATE         \\ \hline
+			jhi\_user      & id\_uasg                  & Uasg do usuario.                                                       & VARCHAR      \\ \hline
+		\end{tabular}
+		
+	\end{table}
+\end{landscape}
+
 Como o sistema é Web, o front-end foi criado utilizando  HTML e CSS, auxiliados por \textit{scripts} JavaScript para dar dinamismo na forma de apresentação de dados.
 O AngularJS na versão 1.x auxiliou no desenvolvimento estabelecendo a comunicação entre o \textit{front-end} e o \textit{back-end}, além da criação das rotas do sistema.
 Na estilização da tela usamos componentes \textit{on demand} do \textit{framework} O Bootstrap.
