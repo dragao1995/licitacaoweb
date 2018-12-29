@@ -1,5 +1,17 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
 The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated field_info (elt_size=4) to 10037 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
 I was expecting a `,' or a `}'---line 611 of file bibliografia.bib
@@ -7,9 +19,54 @@ I was expecting a `,' or a `}'---line 611 of file bibliografia.bib
  :   journal={Ci{\^e}ncias Sociais em Perspectiva},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
-| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
+You've used 73 entries,
+            6714 wiz_defined-function locations,
+            1501 strings with 20021 characters,
+and the built_in function-call counts, 60603 in all, are:
+= -- 5535
+> -- 1380
+< -- 912
++ -- 1416
+- -- 444
+* -- 3744
+:= -- 8245
+add.period$ -- 246
+call.type$ -- 73
+change.case$ -- 571
+chr.to.int$ -- 102
+cite$ -- 72
+duplicate$ -- 4965
+empty$ -- 3694
+format.name$ -- 2068
+if$ -- 12715
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1229
+newline$ -- 377
+num.names$ -- 360
+pop$ -- 1626
+preamble$ -- 1
+purify$ -- 237
+quote$ -- 0
+skip$ -- 5074
+stack$ -- 1
+substring$ -- 2310
+swap$ -- 1662
+text.length$ -- 34
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 7
+warning$ -- 0
+while$ -- 460
+width$ -- 0
+write$ -- 1042
 (There was 1 error message)

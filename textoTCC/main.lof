@@ -1,4 +1,4 @@
-\babel@toc {brazil}{}
+\select@language {brazil}
 \contentsline {figure}{\numberline {1}{\ignorespaces Figura 1: Demanda por profissionais de Scrum e XP}}{32}{figure.3.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Linguagens de programa\IeC {\c c}\IeC {\~a}o mais demandadas pela ind\IeC {\'u}stria de software~\cite {linguagemEframework}.}}{37}{figure.3.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces Comparativo entre \textit {frameworks} demandados e n\IeC {\'\i }vel de conhecimento dos mesmos pelos desenvolvedores~\cite {linguagemEframework}.}}{38}{figure.3.3}
@@ -6,22 +6,18 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces Modelo de dados do projeto.}}{45}{figure.4.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Arquitetura do projeto.}}{49}{figure.4.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces PROT001: Tela home}}{53}{figure.5.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces PROTA001: Solicitar Material}}{54}{figure.5.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces PROT002: Licita\IeC {\c c}\IeC {\~o}es abertas}}{54}{figure.5.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces PROT003: Descri\IeC {\c c}\IeC {\~a}o do item selecionado}}{55}{figure.5.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces PROT006: Lista de Requisi\IeC {\c c}\IeC {\~o}es}}{56}{figure.5.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces PROT007: Analisar Requisi\IeC {\c c}\IeC {\~o}es}}{57}{figure.5.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces PROT009: Lista de Requisi\IeC {\c c}\IeC {\~o}es}}{58}{figure.5.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces PROT010: Resposta da Requisi\IeC {\c c}\IeC {\~a}o}}{58}{figure.5.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces PROT001: Tela home}}{75}{figure.anexochapback.2.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces PROTA001: Solicitar Material}}{75}{figure.anexochapback.2.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces PROTA002: Solicitar servi\IeC {\c c}o}}{76}{figure.anexochapback.2.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces PROT002: Licita\IeC {\c c}\IeC {\~o}es abertas}}{76}{figure.anexochapback.2.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces PROT003: Descri\IeC {\c c}\IeC {\~a}o do item selecionado}}{77}{figure.anexochapback.2.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces PROT004: Confirma\IeC {\c c}\IeC {\~a}o de pedido}}{77}{figure.anexochapback.2.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces PROT005: C\IeC {\'o}digo gerado do pedido}}{78}{figure.anexochapback.2.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces PROT006: Lista de Requisi\IeC {\c c}\IeC {\~o}es}}{81}{figure.anexochapback.3.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces PROT007: Analisar Requisi\IeC {\c c}\IeC {\~o}es}}{82}{figure.anexochapback.3.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces PROT008: Confirmar Resposta}}{82}{figure.anexochapback.3.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces PROT009: Lista de Requisi\IeC {\c c}\IeC {\~o}es}}{84}{figure.anexochapback.4.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces PROT010: Resposta da Requisi\IeC {\c c}\IeC {\~a}o}}{84}{figure.anexochapback.4.26}
+\contentsline {figure}{\numberline {8}{\ignorespaces Exemplo}}{54}{figure.5.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Exemplo}}{54}{figure.5.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo}}{55}{figure.5.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces PROT001: Tela home}}{71}{figure.anexochapback.2.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces PROTA001: Solicitar Material}}{71}{figure.anexochapback.2.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces PROTA002: Solicitar servi\IeC {\c c}o}}{72}{figure.anexochapback.2.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces PROT002: Licita\IeC {\c c}\IeC {\~o}es abertas}}{72}{figure.anexochapback.2.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces PROT003: Descri\IeC {\c c}\IeC {\~a}o do item selecionado}}{73}{figure.anexochapback.2.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces PROT004: Confirma\IeC {\c c}\IeC {\~a}o de pedido}}{73}{figure.anexochapback.2.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces PROT005: C\IeC {\'o}digo gerado do pedido}}{74}{figure.anexochapback.2.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces PROT006: Lista de Requisi\IeC {\c c}\IeC {\~o}es}}{77}{figure.anexochapback.3.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces PROT007: Analisar Requisi\IeC {\c c}\IeC {\~o}es}}{78}{figure.anexochapback.3.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces PROT008: Confirmar Resposta}}{78}{figure.anexochapback.3.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces PROT009: Lista de Requisi\IeC {\c c}\IeC {\~o}es}}{80}{figure.anexochapback.4.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces PROT010: Resposta da Requisi\IeC {\c c}\IeC {\~a}o}}{80}{figure.anexochapback.4.22}

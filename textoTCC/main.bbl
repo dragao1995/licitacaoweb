@@ -3,7 +3,7 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.7 }
+\abntbstabout{v-1.9.6 }
 
 \bibitem[Abreu 2016]{abreu2016desenvolvimento}
 \abntrefinfo{Abreu}{ABREU}{2016}

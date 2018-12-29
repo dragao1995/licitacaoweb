@@ -2,74 +2,105 @@
 
 \chapter[Resultados]{Resultados}\label{Capitulo5}
 
-Este trabalho resultou em uma aplicação web 2.0 que ajuda na fase interna de licitação através de uma melhoria de comunicação.
-Para atingirmos essas melhorias, nós mapeamos os problemas e criamos as soluções.
-Soluções essas, que foram pensadas com vistas à centralizar para o usuário, informações atualizadas sobre processos licitatórios.
+Este trabalho resultou em uma aplicação Web que melhora a comunicação na fase interna de licitação, contribuindo para alcançar o princípio constitucional da eficência.
+Essas melhorias foram atingidas mapeando os problemas através do levantamento de requisitos e em seguida desenvolvendo soluções representadas inicialmente em casos de uso posteriormente implementados.
+A solução permite que entes de um mesmo órgão da administração pública federal comuniquem-se durante a fase interna da licitação.
+Essa comunicação ocorre para maximizar o número de itens em uma compra e minimizar a quantidade de procesos licitatórios com itens repetidos.
 
-A fim de centralizar essas informações foi necessário obter dados sobre as licitações e também sobre itens, materiais, serviços e licitações, e vinculá-las ao nosso banco de dados
+Além disso, a solução abrange um banco de dados com informações sobre itens, materiais, serviços e licitações, fornecendo ao usuário informações atualizadas sobre processos licitatórios.
 A obtenção desses dados é feita através de ação no sistema que recupera os dados na API de Compras Governamentais, forma pela qual o banco de dados pode se manter sempre atualizado com as licitações mais recentes.
+O banco de dados que pode ser atualizado automaticamente mediante ação do usuário, com um clique em um botão atualizar.
 
-Através dessa base de dados sempre atualizada, o usuário pode buscar na aplicação, material ou serviço pelo seu código ou descrição.
+A sequência de figuras apresentada a seguir, demonstra o processo de comunicação entre entes da administração pública federal durante a fase interna, para a compra de um \textit{selo de segurança}.
+Uma vez que um ente ``A'' inicia um processo licitatório para a compra do selo, ele comunica outros entes da rede sobre sua intenção  com um prazo de adesão definido.
+Se um ente ``B'' da rede, também tem intenção de comprar o mesmo item, ele acrescenta a quantidade desejada ao processo já iniciado, respeitando o prazo de adesão.
 
-\begin{figure}[H]
+A Figura~\ref{tela01} apresenta a tela inicial do sistema.
+A Figura~\ref{tela02} apresenta a requisição que cada ente recebe após iniciado um processo licitatório.
+A Figura~\ref{tela03} mostra como um ente ``B'' pode aderir ao processo licitatório iniciado, inserindo sua demanda para os itens apresentados.
+A Figura~\ref{tela04} apresenta a resposta  à requisição do ente ``B'' para o ente ``A''.
+\begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.95\textwidth]{figuras/prototipo001.png}
+	\includegraphics[width=0.75\textwidth]{figuras/prototipo001.png}
 	\caption[PROT001: Tela home]{PROT001: Tela home.}
+	\label{tela01}
 \end{figure}
 
-\begin{figure}[H]
+
+\begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.95\textwidth]{figuras/prototipoA001.png}
-	\caption[PROTA001: Solicitar Material]{PROTA001: Solicitar Material.}
+	\includegraphics[width=0.75\textwidth]{figuras/fig01.eps}
+	\caption[Exemplo]{Exemplo.}
+	\label{tela02}
 \end{figure}
 
-Isso permite que um câmpus interessado escolha uma licitação iniciada por outro câmpus para fazer sua adesão.
-
-\begin{figure}[H]
+\begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.95\textwidth]{figuras/prototipo002.png}
-	\caption[PROT002: Licitações abertas]{PROT002: Licitações abertas.}
+	\includegraphics[width=0.75\textwidth]{figuras/fig01.eps}
+	\caption[Exemplo]{Exemplo.}
+	\label{tela03}
 \end{figure}
 
-indicando á quantidade de material ou serviço que gostaria de comprar junto.
-
-\begin{figure}[H]
+\begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.95\textwidth]{figuras/prototipo003.png}
-	\caption[PROT003: Descrição do item selecionado]{PROT003: Descrição do item selecionado.}
+	\includegraphics[width=0.75\textwidth]{figuras/fig01.eps}
+	\caption[Exemplo]{Exemplo.}
+	\label{tela04}
 \end{figure}
 
-Sempre que há uma solicitação, cada setor de compras dos \textit{campi} recebem uma requisição informando sobre um processo licitatório iniciado.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.95\textwidth]{figuras/prototipo006.png}
-	\caption[PROT006: Lista de Requisições]{PROT006: Lista de Requisições.}
-\end{figure}
-
-O campûs destino analisa a requisição informando se aceita ou não.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.95\textwidth]{figuras/prototipo007.png}
-	\caption[PROT007: Analisar Requisições]{PROT007: Analisar Requisições.}
-\end{figure}
-
-Com a analise da requisição finalizada o campûs pedinte recebe á resposta da requisição.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.95\textwidth]{figuras/prototipo009.png}
-	\caption[PROT009: Lista de Requisições]{PROT009: Lista de Requisições.}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.95\textwidth]{figuras/prototipo010.png}
-	\caption[PROT010: Resposta da Requisição]{PROT010: Resposta da Requisição.}
-\end{figure}
-
-O sistema desenvolvido agiliza um processo burocrático, dando celeridade na troca de informações sobre compras inter-\textit{campi}.
+%\begin{figure}[htp]
+%	\centering
+%	\includegraphics[width=0.75\textwidth]{figuras/prototipoA001.png}
+%	\caption[PROTA001: Solicitar Material]{PROTA001: Solicitar Material.}
+%\end{figure}
+%
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.95\textwidth]{figuras/prototipo002.png}
+%	\caption[PROT002: Licitações abertas]{PROT002: Licitações abertas.}
+%\end{figure}
+%
+%%indicando á quantidade de material ou serviço que gostaria de comprar junto.
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.95\textwidth]{figuras/prototipo003.png}
+%	\caption[PROT003: Descrição do item selecionado]{PROT003: Descrição do item selecionado.}
+%\end{figure}
+%
+%
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.95\textwidth]{figuras/prototipo006.png}
+%	\caption[PROT006: Lista de Requisições]{PROT006: Lista de Requisições.}
+%\end{figure}
+%
+%O campûs destino analisa a requisição informando se aceita ou não.
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.95\textwidth]{figuras/prototipo007.png}
+%	\caption[PROT007: Analisar Requisições]{PROT007: Analisar Requisições.}
+%\end{figure}
+%
+%Com a analise da requisição finalizada o campûs pedinte recebe á resposta da requisição.
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.95\textwidth]{figuras/prototipo009.png}
+%	\caption[PROT009: Lista de Requisições]{PROT009: Lista de Requisições.}
+%\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.95\textwidth]{figuras/prototipo010.png}
+%	\caption[PROT010: Resposta da Requisição]{PROT010: Resposta da Requisição.}
+%\end{figure}
+%
+%O sistema desenvolvido agiliza um processo burocrático, dando celeridade na troca de informações sobre compras inter-\textit{campi}.
 
 
 \section{Disponibilidade do Sistema}
