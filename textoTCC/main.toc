@@ -1,5 +1,5 @@
 \changetocdepth {4}
-\select@language {brazil}
+\babel@toc {brazil}{}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
@@ -59,7 +59,7 @@
 \contentsline {section}{\numberline {6.1}Conclus\IeC {\~a}o}{57}{section.6.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{59}{section*.17}
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{59}{section*.17}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
