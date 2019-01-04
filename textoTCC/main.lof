@@ -1,4 +1,4 @@
-\babel@toc {brazil}{}
+\select@language {brazil}
 \contentsline {figure}{\numberline {1}{\ignorespaces Figura 1: Demanda por profissionais de Scrum e XP}}{32}{figure.3.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Linguagens de programa\IeC {\c c}\IeC {\~a}o mais demandadas pela ind\IeC {\'u}stria de software~\cite {linguagemEframework}.}}{37}{figure.3.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces Comparativo entre \textit {frameworks} demandados e n\IeC {\'\i }vel de conhecimento dos mesmos pelos desenvolvedores~\cite {linguagemEframework}.}}{38}{figure.3.3}
@@ -6,9 +6,9 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces Modelo de dados do projeto.}}{45}{figure.4.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Arquitetura do projeto.}}{49}{figure.4.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces PROT001: Tela home}}{53}{figure.5.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces PROT006: Lista de Requisi\IeC {\c c}\IeC {\~o}es}}{54}{figure.5.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces PROT003: Descri\IeC {\c c}\IeC {\~a}o do item selecionado}}{54}{figure.5.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces PROT010: Resposta da Requisi\IeC {\c c}\IeC {\~a}o}}{55}{figure.5.10}
+\contentsline {figure}{\numberline {8}{\ignorespaces Lista de Requisi\IeC {\c c}\IeC {\~o}es}}{54}{figure.5.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o do item selecionado}}{54}{figure.5.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Resposta da Requisi\IeC {\c c}\IeC {\~a}o}}{55}{figure.5.10}
 \contentsline {figure}{\numberline {11}{\ignorespaces PROT001: Tela home}}{71}{figure.anexochapback.2.11}
 \contentsline {figure}{\numberline {12}{\ignorespaces PROTA001: Solicitar Material}}{71}{figure.anexochapback.2.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces PROTA002: Solicitar servi\IeC {\c c}o}}{72}{figure.anexochapback.2.13}
